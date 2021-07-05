@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css"/>
+    
+</head>
+<body>
+    <!-- 游戏主区域 -->
+    <canvas id="gameCanvas"></canvas>
+    <div class="progress"></div>
+    <div class="percentage">0%</div>
+    <div class="introduction">
+        说明：当左侧进度条到100%后，会自动销毁最后一行的方块
+    </div>
+    <button class="yellow" onclick="superTime()">
+        <div class="f">消</div>
+    </button>
+    <!-- 显示下一个方块 -->
+    <canvas id="nextCanvas"></canvas>
+    <p class="score">得分：0</p>
+    <img class="zanting" src="../source/img/zanting.png" alt="暂停">
+    <img class="bianxing" src="../source/img/bianxing.png" alt="变形">
+    <img class="jiasu" src="../source/img/jiasu.png" alt="加速">
+    <img class="xiangzuo" src="../source/img/xiangzuo.png" alt="向左">
+    <img class="xiangyou" src="../source/img/xiangyou.png" alt="向右">
+    <script src="./js/index.js"></script>
+</body>
+</html>

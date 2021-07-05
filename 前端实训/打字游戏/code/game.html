@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./game.css">
+    <script src="./game.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="game">
+        <div class="home">
+            <div class="score">
+                <div id="intro">当前分数：</div>
+                <div class="scoreImg"></div>
+            </div>
+            <div class="d_02">
+            </div>
+            <div class="btn_start btn" onclick="gameStart()">
+                开始游戏
+            </div>
+            <div class="btn_other btn">
+                推荐
+            </div>
+            <div class="btn_music btn" onclick="playMusic(this)">
+                音乐开
+            </div>
+            <!-- 游戏界面 -->
+            <canvas class="game_canvas" width="724px" height="433px">
+            </canvas>
+        </div>
+        <!-- 按键音乐 -->
+        <audio class="mp3" src="../source/music/btnpressed.ogg" ></audio>
+        <!-- 背景音乐 -->
+        <audio class="bgmp3" src="../source/music/s2.ogg" loop="loop" autoplay></audio>
+    </div>
+    
+</body>
+</html>
