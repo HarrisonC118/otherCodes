@@ -65,14 +65,12 @@ export default {
           passWord: registerUser.passWord,
           confirmPassword: registerUser.confirmPassword
         })
-        console.log(result)
         if (result?.errno === 0) {
           mes.value = '注册成功！'
           isShowToast.value = true
           setTimeout(() => {
             isShowToast.value = false
-            // localStorage.isLogin = true
-            // router.push({ name: 'Home' })
+            router.push({ name: 'Login' })
           }, 2000)
         } else {
           mes.value = '注册失败！'

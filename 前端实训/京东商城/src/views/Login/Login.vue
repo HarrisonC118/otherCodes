@@ -62,8 +62,8 @@ export default {
           isShowToast.value = true
           setTimeout(() => {
             isShowToast.value = false
-            // localStorage.isLogin = true
-            // router.push({ name: 'Home' })
+            localStorage.isLogin = true
+            router.push({ name: 'Home' })
           }, 2000)
         } else {
           mes.value = '登录失败！'

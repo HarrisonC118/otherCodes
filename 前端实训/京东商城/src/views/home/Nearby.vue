@@ -2,60 +2,67 @@
   <div class="wrapper__nearby">
     <!-- 附近的店 -->
     <h3 class="nearby__title">附近店铺</h3>
-    <div class="nearby__item" v-for="item in goods" :key="item.id">
+    <div
+      class="nearby__item"
+      v-for="item in goodLists.goodList"
+      :key="item.__id"
+    >
       <img class="item__img" :src="item.imgUrl" alt />
       <div class="item__content">
         <div class="content__title">{{ item.title }}</div>
         <div class="content__tags">
-          <span class="tags__tag" v-for="tag in item.tags" :key="tag">{{
-            tag
-          }}</span>
+          <span class="tags__tag"> 月售:{{ item.sales }} </span>
+          <span class="tags__tag"> 起送:{{ item.expressLimit }} </span>
+          <span class="tags__tag"> 基础运费:{{ item.expressPrice }} </span>
         </div>
         <div class="content__discount">{{ item.discount }}</div>
         <div class="content__br"></div>
       </div>
     </div>
+    <Toast v-show="isShowToast" :mes="mes" />
   </div>
 </template>
 <script>
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
+import { get } from '../../utils/request.js'
+import Toast from '../../components/toast.vue'
 export default {
   name: 'Nearby',
+  components: {
+    Toast
+  },
   setup (porps, context) {
-    const goods = reactive([
-      {
-        id: 1,
-        imgUrl: 'http://www.dell-lee.com/imgs/vue3/near.png',
-        title: '沃尔玛',
-        tags: ['月售1W+', '起送￥0', '基础运费￥5'],
-        discount: 'VIP尊享满89减4元运费券(每月3张)'
-      },
-      {
-        id: 2,
-        imgUrl:
-          'https://img30.360buyimg.com/vendersettle/s120x120_jfs/t1/150287/39/15578/19167/5fc0af1aE970c72c2/abb490ea30c4774c.jpg.dpg',
-        title: '家乐福',
-        tags: ['月售2W+', '起送￥2', '基础运费￥9'],
-        discount: 'VIP尊享满1000减2元运费券(每月1张)'
-      },
-      {
-        id: 3,
-        imgUrl:
-          'https://img30.360buyimg.com/vendersettle/s120x120_jfs/t1/74093/37/4166/6743/5d2552c2Eadfdfb5d/bb15c4748268940d.png',
-        title: '711',
-        tags: ['月售10W+', '起送￥2', '基础运费￥3'],
-        discount: 'VIP尊享满50减30元运费券(每月6张)'
-      },
-      {
-        id: 4,
-        imgUrl: 'http://www.dell-lee.com/imgs/vue3/near.png',
-        title: '沃尔玛',
-        tags: ['月售1W+', '起送￥0', '基础运费￥5'],
-        discount: 'VIP尊享满89减4元运费券(每月3张)'
+    var mes = ref('')
+    var isShowToast = ref(false)
+    var goodLists = reactive({
+      goodList: []
+    })
+    const handleRegister = async () => {
+      try {
+        const result = await get('/hotList')
+        if (result?.errno === 0 && result?.data?.length !== 0) {
+          goodLists.goodList = result.data
+        } else {
+          mes.value = '商品信息失败,请重试!'
+          isShowToast.value = true
+          setTimeout(() => {
+            isShowToast.value = false
+          }, 2000)
+        }
+      } catch (e) {
+        mes.value = '连接服务器失败!'
+        isShowToast.value = true
+        setTimeout(() => {
+          isShowToast.value = false
+        }, 2000)
       }
-    ])
+    }
+
+    handleRegister()
     return {
-      goods
+      goodLists,
+      isShowToast,
+      mes
     }
   }
 }
