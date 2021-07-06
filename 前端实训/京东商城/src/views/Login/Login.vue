@@ -24,42 +24,61 @@
       <span class="other__forget">忘记密码</span>
     </div>
     <docker />
+    <toasat v-show="isShowToast" :mes="mes"></toasat>
   </div>
 </template>
 <script>
 import docker from '../../components/docker.vue'
 import { useRouter } from 'vue-router'
-import axios from 'axios'
-import { reactive } from 'vue'
-// 设置提交数据的格式为json格式
-axios.defaults.headers.post['Content-Type'] = 'application/json'
+import { reactive, ref } from 'vue'
+import { post } from '../../utils/request.js'
+import Toasat from '../../components/toast.vue'
+
 export default {
   name: 'Login',
   components: {
-    docker
+    docker,
+    Toasat
   },
   setup (porps, context) {
     const router = useRouter()
+    var mes = ref('')
+    var isShowToast = ref(false)
     const user = reactive({
       userName: '',
       passWord: ''
     })
-    function handleLogin () {
-      axios
-        .post(
-          'https://www.fastmock.site/mock/76be3c9b531d8ee9728d14c66fe0bff2/hatcher/login',
-          {
-            userName: user.userName,
-            passWord: user.passWord
-          }
-        )
-        .then(a => {
-          localStorage.isLogin = true
-          router.push({ name: 'Home' })
+    // 异步访问
+    const handleLogin = async () => {
+      // await关键字只能在async修饰的函数中使用，用来等待一个 Promise 对象
+      try {
+        const result = await post('/isLogin', {
+          userName: user.userName,
+          passWord: user.passWord
         })
-        .catch(a => {
-          console.log('失败了')
-        })
+        console.log(result)
+        if (result?.errno === 0) {
+          mes.value = '登录成功！'
+          isShowToast.value = true
+          setTimeout(() => {
+            isShowToast.value = false
+            // localStorage.isLogin = true
+            // router.push({ name: 'Home' })
+          }, 2000)
+        } else {
+          mes.value = '登录失败！'
+          isShowToast.value = true
+          setTimeout(() => {
+            isShowToast.value = false
+          }, 2000)
+        }
+      } catch (e) {
+        mes.value = '连接服务器失败！'
+        isShowToast.value = true
+        setTimeout(() => {
+          isShowToast.value = false
+        }, 2000)
+      }
     }
     function toRegisterPage () {
       router.push({ name: 'Register' })
@@ -67,7 +86,9 @@ export default {
     return {
       handleLogin,
       toRegisterPage,
-      user
+      user,
+      isShowToast,
+      mes
     }
   }
 }
