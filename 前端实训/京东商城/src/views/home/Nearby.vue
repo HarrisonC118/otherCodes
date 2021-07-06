@@ -50,7 +50,7 @@ export default {
           }, 2000)
         }
       } catch (e) {
-        mes.value = '连接服务器失败!'
+        mes.value = '连接服务器失败'
         isShowToast.value = true
         setTimeout(() => {
           isShowToast.value = false

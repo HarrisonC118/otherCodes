@@ -68,7 +68,8 @@ var percentage = document.querySelector('.percentage')
 var progress = document.querySelector(".progress")
 var number = 0
 var sc = 0
-document.querySelector(".yellow").disabled=true
+document.querySelector(".yellow").disabled=false
+
 blockWidth = window.innerWidth * 0.6 / 10
 blockHeight = blockWidth
 // 设置画布的宽度和高度
@@ -225,7 +226,7 @@ function isMove(x, y) {
 }
 
 createList()
-
+document.querySelector(".yellow").onclick = clearList()
 function getImage() {
     var img = new Image()
     img.src = "../source/img/blocks1.png"
@@ -400,9 +401,7 @@ function superTime(){
         }
     }    
     document.querySelector(".yellow").style.backgroundColor = "rgb(179, 179, 179)"
-    document.querySelector(".yellow").disabled=true
-    document.querySelector(".yellow").onclick = function(){
+    document.querySelector(".yellow").disabled = false
 
-    }
     
 }
