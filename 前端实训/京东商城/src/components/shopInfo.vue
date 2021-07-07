@@ -4,7 +4,7 @@
     <div
       :class="{
         shop__content: true,
-        'shop__content--bordered': hideBorder ? false : true
+        'shop__content--bordered': hideBorder == 'true' ? false : true
       }"
     >
       <div class="content__title">{{ item.title }}</div>
@@ -37,7 +37,7 @@ export default {
   .shop__content {
     // flex: 1;
     padding-bottom: 0.12rem;
-    border-bottom: 1px solid #f1f1f1;
+    // border-bottom: 1px solid #f1f1f1;
     margin: 0.08rem;
     .content__title {
       color: #333;
