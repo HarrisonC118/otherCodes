@@ -68,7 +68,7 @@ var percentage = document.querySelector('.percentage')
 var progress = document.querySelector(".progress")
 var number = 0
 var sc = 0
-document.querySelector(".yellow").disabled=false
+yellowButton.disabled=true
 
 blockWidth = window.innerWidth * 0.6 / 10
 blockHeight = blockWidth
@@ -226,7 +226,6 @@ function isMove(x, y) {
 }
 
 createList()
-document.querySelector(".yellow").onclick = clearList()
 function getImage() {
     var img = new Image()
     img.src = "../source/img/blocks1.png"
@@ -375,8 +374,8 @@ function clearList() {
                 }
             }
             sc += 20
-            if(sc>=0){
-                document.querySelector(".yellow").disabled=false
+            if(sc>=100){
+                yellowButton.disabled = false
                 percentage.innerHTML= 100 + "%"
                 progress.style.height = sc*2+ "px"
             }else {
@@ -400,8 +399,24 @@ function superTime(){
             list[list.length-1][i]=1
         }
     }    
-    document.querySelector(".yellow").style.backgroundColor = "rgb(179, 179, 179)"
-    document.querySelector(".yellow").disabled = false
-
+    yellowButton.style.backgroundColor = "rgb(179, 179, 179)"
+    yellowButton.disabled = true
+    for (var i = list.length - 1; i > 0; i--) {
+        var flag = true
+        for (var j = 0; j < list[0].length; j++) {
+            if (list[i][j] == 0) {
+                flag = false
+                break
+            }
+        }
+        if (flag) {
+            for (var x = i; x > 0; x--) {
+                for (var y = 0; y < list[0].length; y++) {
+                    list[x][y] = list[x - 1][y]
+                }
+            }
+            i++
+        }
+    }
     
 }
