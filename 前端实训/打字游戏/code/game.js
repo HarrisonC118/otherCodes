@@ -39,6 +39,7 @@ class Letter {
         this.x = Math.random() * cW - this.w
         this.y = -this.h
         this.liveTime = 0 //当前存活时间
+        this.isDanger = Math.ceil(Math.random() * 10) >= 8?true:false //当数值大于8时为危险按钮
         if (this.x < 0) {
             this.x = 0
         }
@@ -56,7 +57,12 @@ class Letter {
         this.y += this.g * this.liveTime / 500
     }
     drawLetter() {
+        if(this.isDanger){
+            gameContext.fillStyle = "#FF0000"; 　
+            gameContext.fillRect(this.x, this.y,this.w,this.h); 
+        }
         gameContext.drawImage(this.img, this.x, this.y, this.w, this.h)
+        
         //drawImage(图片地址,x坐标,y坐标,图片的高度,图片的宽度)
     }
     setLiveTime() {
@@ -79,8 +85,7 @@ function gameStart() {
     //每一秒创建一个字母
     setInterval(() => {
         createLetter()
-    }, 5)
-    // createLetter()
+    }, 500)
     setInterval(() => {
         gameTick()
     }, 10)
@@ -91,11 +96,10 @@ function gameStart() {
 function createLetter() {
     var letter = new Letter()
     letters.push(letter)
-    console.log(letters)
+    console.log(letter.isDanger)
 }
 // 把字母画到画布上
 function gameTick() {
-    var getImage = ""
     //清空画布,从(0,0)到(画布的宽,画布的高)清空
     gameContext.clearRect(0, 0, cW, cH)
     //遍历字母数组
@@ -105,7 +109,9 @@ function gameTick() {
         lett.drawLetter()
         if (lett.y > cH) {
             letters.splice(i, 1)
-            score -= 8
+            if(!lett.isDanger){
+                score -= 8
+            }
             drawNumImg(score)
         }
     }
@@ -117,16 +123,34 @@ function keyDwon(e) {
     for (var a = 0; a < letters.length; a++) {
         var lett = letters[a]
         if (lett.keyCode === ev.keyCode) {
-            score += 13
-            //更改分数的图片
-            drawNumImg(score)
+            if(lett.isDanger){
+                score -= 10
+                // 如果按到危险按钮，画面抖动一秒钟,分数减10
+                gameCanvas.className = 'game_canvas dongdongdong'
+                //更改分数的图片
+                drawNumImg(score)
 
-            letters.splice(a, 1)
-            if (playIndex === 1) {
-                keySound.src = '../source/music/bloser.mp3'
-                keySound.play()
+                letters.splice(a, 1)
+                if (playIndex === 1) {
+                    keySound.src = '../source/music/bloser.mp3'
+                    keySound.play()
+                }
+                setTimeout(()=>{
+                    gameCanvas.className = 'game_canvas'
+                },500)
+                break
+            }else {
+                score += 13
+                //更改分数的图片
+                drawNumImg(score)
+
+                letters.splice(a, 1)
+                if (playIndex === 1) {
+                    keySound.src = '../source/music/bloser.mp3'
+                    keySound.play()
+                }
+                break
             }
-            break
         }
         keySound.play()
         score -= 5

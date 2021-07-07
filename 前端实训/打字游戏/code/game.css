@@ -38,8 +38,8 @@ body {
     cursor: pointer;
 }
 
-.btn:hover {
-    animation: co 2s infinite ease-in-out;
+.dongdongdong {
+    animation: co 0.5s infinite ease-in-out;
 }
 
 .btn_other {
@@ -74,30 +74,11 @@ body {
 }
 
 @keyframes co {
-    0% {
-        font-weight: 300;
-        color: #000;
-    }
-
-    25% {
-        font-weight: 500;
-        color: rgb(245, 235, 150)
-    }
-
-    50% {
-        font-weight: 800;
-        color: violet;
-    }
-
-    75% {
-        color: rgb(245, 235, 150);
-        font-weight: 500;
-    }
-
-    100% {
-        font-weight: 300;
-        color: #000;
-    }
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(+2px, 0, 0); }
+    30%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(+4px, 0, 0); }
+    50% { transform: translate3d(-4px, 0, 0); }
 }
 
 .num_01 {

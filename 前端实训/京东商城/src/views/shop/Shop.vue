@@ -1,19 +1,22 @@
 <template>
-  <div class="wrapper">
-    <div class="wrapper__search">
-      <div class="iconfont search__returnFont" @click="returnToHome">
-        &#xe632;
+  <div>
+    <div class="wrapper">
+      <div class="wrapper__search">
+        <div class="iconfont search__returnFont" @click="returnToHome">
+          &#xe632;
+        </div>
+        <div class="search__content">
+          <div class="iconfont content__searchFont">&#xe7ac;</div>
+          <input
+            class="content__input"
+            type="text"
+            placeholder="请输入商品名称搜索"
+          />
+        </div>
       </div>
-      <div class="search__content">
-        <div class="iconfont content__searchFont">&#xe7ac;</div>
-        <input
-          class="content__input"
-          type="text"
-          placeholder="请输入商品名称搜索"
-        />
-      </div>
+      <ShopInfo :item="data.item" :hideBorder="true" />
     </div>
-    <ShopInfo :item="data.item" :hideBorder="true" />
+    <CommodityInfo />
   </div>
 </template>
 <script>
@@ -22,10 +25,12 @@ import { reactive } from 'vue'
 import { get } from '../../utils/request.js'
 // route用来获取参数值
 import { useRoute, useRouter } from 'vue-router'
+import CommodityInfo from './CommodityInfo.vue'
 export default {
   name: 'Shop',
   components: {
-    ShopInfo
+    ShopInfo,
+    CommodityInfo
   },
   setup (props, context) {
     const route = useRoute()
@@ -36,10 +41,7 @@ export default {
     const getItemData = async () => {
       const result = await get(`/shop/${route.params.id}`)
 
-      console.log(result)
-
       if (result?.errno === 0 && result?.data?.length !== 0) {
-        console.log(result)
         data.item = result.data
       }
     }
@@ -55,7 +57,7 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .wrapper {
   padding: 0 0.18rem;
   .wrapper__search {
