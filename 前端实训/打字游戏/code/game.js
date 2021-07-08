@@ -10,14 +10,22 @@ var letters = []
 var keySound
 var score = 0
 
+var createTime = 500 //字母创建时间
+var level = 0 //1是简单 2是中等 3是困难 4是地狱
+
+var jia = 0
+var jian = 0
+var levelTag = 0
 window.onload = function () {
     gameCanvas = document.querySelector('.game_canvas')
     gameContext = gameCanvas.getContext("2d")
     keySound = document.querySelector('.mp3')
+    jia = document.querySelector('.jia')
+    jian = document.querySelector('.jian')
+    levelTag = document.querySelector('.levelTag')
 }
 // 音乐的播放和停止
 function playMusic(obj) {
-    console.log(obj.innerHTML)
     var bgmp3 = document.querySelector('.bgmp3')
     if (playIndex === 1) {
         bgmp3.pause()
@@ -80,23 +88,23 @@ function getImage(obj) {
     return img
 }
 // 游戏开始
+var createInterval
+var tickInterval
 function gameStart() {
     gameCanvas.style.display = "block"
     //每一秒创建一个字母
-    setInterval(() => {
+    createInterval = setInterval(() => {
         createLetter()
-    }, 500)
-    setInterval(() => {
+    }, createTime)
+    tickInterval = setInterval(() => {
         gameTick()
     }, 10)
     onkeydown = keyDwon
-
 }
 // 创建字母
 function createLetter() {
     var letter = new Letter()
     letters.push(letter)
-    console.log(letter.isDanger)
 }
 // 把字母画到画布上
 function gameTick() {
@@ -175,4 +183,49 @@ function drawNumImg(num) {
     var scoreNode = document.querySelector(".scoreImg")
     scoreNode.style.width = 15 * s_num.length + "px"
     scoreNode.innerHTML = str_num
+}
+
+function levelUp(){
+    if(level >= 4){
+        level = 4
+    }else {
+        level += 1
+    }
+    changeLevel()
+}
+
+function levelDown(){
+    if(level <= 1){
+        level = 1
+    }else {
+        level -= 1
+    }
+    changeLevel()
+}
+function changeLevel(){
+    clearInterval(createInterval)
+    clearInterval(tickInterval)
+    console.log(levelTag)
+    switch(level){
+        case 1:
+            createTime = 500
+            gameStart()
+            levelTag.innerHTML="难度：简单"
+            break
+        case 2:
+            createTime = 200
+            gameStart()
+            levelTag.innerHTML="难度：中等"
+            break
+        case 3:
+            createTime = 80
+            gameStart()
+            levelTag.innerHTML="难度：困难"
+            break
+        case 4:
+            createTime = 5
+            gameStart()  
+            levelTag.innerHTML="难度：地狱"
+            break
+    }
 }

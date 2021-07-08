@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    user-select: none;
 }
 
 .game {
@@ -90,4 +91,24 @@ body {
 
 .scoreImg {
     float: left;
+}
+.controller{
+    display: flex;
+    top: 270px;
+    right: 70px;
+    position: absolute;
+    justify-content: center;
+
+}
+.jia,.jian {
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+}
+.level {
+    margin: 0 10px;
 }
