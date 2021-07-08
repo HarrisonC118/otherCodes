@@ -1,13 +1,15 @@
 <template>
   <div class="content">
     <div class="content__classify">
+      <div
+        class="classify__item"
+        v-for="item in classify.items"
+        :key="item.__id"
+        @click="getClassifyItems(item.tag)"
+      >
+        {{ item.title }}
+      </div>
       <!-- 左侧的分类栏 -->
-      <div class="classify__item classify__item--active">全部商品</div>
-      <div class="classify__item">秒杀</div>
-      <div class="classify__item">新鲜水果</div>
-      <div class="classify__item">休闲食品</div>
-      <div class="classify__item">时令蔬菜</div>
-      <div class="classify__item">肉蛋家禽</div>
     </div>
     <div class="content__commodity">
       <!-- 右侧的具体商品 -->
@@ -27,7 +29,7 @@
         </div>
         <div class="item__number">
           <span class="number__minus">-</span>
-          0
+          {{ cartList?.[shopId]?.[item.__id]?.count || 0 }}
           <span class="number__plus">+</span>
         </div>
       </div>
@@ -37,21 +39,52 @@
 <script>
 import { get } from '../../utils/request'
 import { reactive } from 'vue'
+import { useStore } from 'vuex'
+import { useRoute } from 'vue-router'
 export default {
   name: 'CommodityInfo',
   setup () {
+    const store = useStore()
+    const route = useRoute()
+    var shopId = route.params.id
+    var cartList = store.state.cartList
     var commoditys = reactive({
       items: []
     })
-    const getInfo = async () => {
-      const result = await get('/commodityItems')
+    // var commoditysNum = reactive({
+    //   itemId: 0,
+    //   itemNum: 0
+    // })
+    var classify = reactive({
+      items: []
+    })
+    const getClassify = async () => {
+      const resultClassify = await get('/classify')
+      if (resultClassify?.errno === 0 && resultClassify?.data?.length !== 0) {
+        classify.items = resultClassify.data
+      }
+    }
+    getClassify()
+
+    function getClassifyItems (tag) {
+      getInfo(tag)
+      console.log(tag)
+    }
+    const getInfo = async tag => {
+      const result = await get(`/commodityItems/${tag}`)
       if (result?.errno === 0 && result?.data?.length !== 0) {
         commoditys.items = result.data
       }
+      // for (var i = 0; i < commoditys.items.length; i++) {
+      //   commoditys.items[i].id
+      // }
     }
-    getInfo()
     return {
-      commoditys
+      commoditys,
+      getClassifyItems,
+      classify,
+      cartList,
+      shopId
     }
   }
 }

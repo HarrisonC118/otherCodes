@@ -2,6 +2,12 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
+    // cartList: {
+    //   shopId:{
+    //     item
+    //   }
+    // },
+    cartList: {},
     pageIndex: 0
   },
   mutations: {

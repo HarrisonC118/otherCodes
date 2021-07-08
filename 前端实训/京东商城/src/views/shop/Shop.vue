@@ -17,6 +17,7 @@
       <ShopInfo :item="data.item" :hideBorder="true" />
     </div>
     <CommodityInfo />
+    <Cart />
   </div>
 </template>
 <script>
@@ -26,11 +27,13 @@ import { get } from '../../utils/request.js'
 // route用来获取参数值
 import { useRoute, useRouter } from 'vue-router'
 import CommodityInfo from './CommodityInfo.vue'
+import Cart from './Cart.vue'
 export default {
   name: 'Shop',
   components: {
     ShopInfo,
-    CommodityInfo
+    CommodityInfo,
+    Cart
   },
   setup (props, context) {
     const route = useRoute()
