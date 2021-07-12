@@ -1,7 +1,4 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-// import Home from '../views/Home.vue'
-// import Register from '../views/Register/Register.vue'
-// import Shop from '../views/shop/Shop.vue'
 const routes = [
   {
     path: '/',
@@ -11,9 +8,6 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../views/Login/Login.vue'),
     beforeEnter (to, from, next) {
       const isLogin = localStorage.isLogin

@@ -23,12 +23,10 @@
       <div class="other__br">|</div>
       <span class="other__forget">忘记密码</span>
     </div>
-    <docker />
     <toasat v-show="isShowToast" :mes="mes"></toasat>
   </div>
 </template>
 <script>
-import docker from '../../components/docker.vue'
 import { useRouter } from 'vue-router'
 import { reactive, ref } from 'vue'
 import { post } from '../../utils/request.js'
@@ -37,7 +35,6 @@ import Toasat from '../../components/toast.vue'
 export default {
   name: 'Login',
   components: {
-    docker,
     Toasat
   },
   setup (porps, context) {

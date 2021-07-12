@@ -7,20 +7,45 @@
           src="http://www.dell-lee.com/imgs/vue3/basket.png"
           alt=""
         />
-        <div class="icon__tag">0</div>
+        <div class="icon__tag">{{ total.count }}</div>
       </div>
       <div class="check__info">
         <span>总计:</span>
-        <span class="info__price">&yen;666</span>
+        <span class="info__price">&yen;{{ total.money }}</span>
       </div>
       <div class="check__btn">去结算</div>
     </div>
   </div>
 </template>
 <script>
+import { useStore } from 'vuex'
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 export default {
   name: 'Cart',
-  setup () {}
+  setup () {
+    const store = useStore()
+    const route = useRoute()
+    const shopId = route.params.id
+    const cartList = store.state.cartList
+
+    const total = computed(() => {
+      const itemList = cartList[shopId]
+      let count = 0
+      let money = 0
+      if (itemList) {
+        for (const i in itemList) {
+          const item = itemList[i]
+          count += item.count
+          money += item.count * item.price
+        }
+      }
+      return { count, money }
+    })
+    return {
+      total
+    }
+  }
 }
 </script>
 <style scoped lang="scss">

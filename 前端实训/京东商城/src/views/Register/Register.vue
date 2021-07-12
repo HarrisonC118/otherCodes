@@ -27,12 +27,10 @@
     <div class="register__other">
       <span class="other__register" @click="toLoginPage">已有账号去登陆</span>
     </div>
-    <docker />
     <toasat v-show="isShowToast" :mes="mes"></toasat>
   </div>
 </template>
 <script>
-import docker from '../../components/docker.vue'
 import { useRouter } from 'vue-router'
 import { reactive, ref } from 'vue'
 import { post } from '../../utils/request.js'
@@ -40,7 +38,6 @@ import Toasat from '../../components/toast.vue'
 export default {
   name: 'Register',
   components: {
-    docker,
     Toasat
   },
   setup (porps, context) {

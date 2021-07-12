@@ -28,9 +28,17 @@
           </p>
         </div>
         <div class="item__number">
-          <span class="number__minus">-</span>
+          <span
+            class="number__minus"
+            @click="itemToCart(shopId, item.__id, item, -1)"
+            >-</span
+          >
           {{ cartList?.[shopId]?.[item.__id]?.count || 0 }}
-          <span class="number__plus">+</span>
+          <span
+            class="number__plus"
+            @click="itemToCart(shopId, item.__id, item, 1)"
+            >+</span
+          >
         </div>
       </div>
     </div>
@@ -55,6 +63,10 @@ export default {
     //   itemId: 0,
     //   itemNum: 0
     // })
+    const itemToCart = (shopId, itemId, itemInfo, num) => {
+      const a = { shopId, itemId, itemInfo, num }
+      store.commit('itemToCart', a)
+    }
     var classify = reactive({
       items: []
     })
@@ -84,7 +96,8 @@ export default {
       getClassifyItems,
       classify,
       cartList,
-      shopId
+      shopId,
+      itemToCart
     }
   }
 }

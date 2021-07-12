@@ -28,29 +28,6 @@ var layouts = [
         [1, 1, 1]
     ]
 ]
-// var layouts = [
-//     [
-//         [1, 1, 1, 1]
-//     ],
-//     [
-//         [1, 1, 1, 1]
-//     ],
-//     [
-//         [1, 1, 1, 1]
-//     ],
-//     [
-//         [1, 1, 1, 1]
-//     ],
-//     [
-//         [1, 1, 1, 1]
-//     ],
-//     [
-//         [1, 1, 1, 1]
-//     ],
-//     [
-//         [1, 1, 1, 1]
-//     ]
-// ]
 var yellowButton = document.querySelector(".yellow")
 var gameCanvas = document.querySelector('#gameCanvas')
 var gameContext = gameCanvas.getContext("2d")
@@ -340,7 +317,7 @@ function changeLayout() {
     if (offSetX > 10) {
         originX = 10 - newLayout[0].length
     }
-    if (offSetY > 10) {
+    if (offSetY > 20) {
         originY = 20 - newLayout.length
     }
 
@@ -418,5 +395,4 @@ function superTime(){
             i++
         }
     }
-    
 }

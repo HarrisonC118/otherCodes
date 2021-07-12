@@ -187,7 +187,7 @@ function drawNumImg(num) {
 
 function levelUp(){
     if(level >= 4){
-        level = 4
+        level = a4
     }else {
         level += 1
     }
