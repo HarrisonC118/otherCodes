@@ -1,0 +1,65 @@
+{
+  "id": "2644462",
+  "name": "goudong",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "狗东到家小项目",
+  "glyphs": [
+    {
+      "icon_id": "21864614",
+      "name": "后退",
+      "font_class": "houtui1",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "19223769",
+      "name": "serch",
+      "font_class": "serch",
+      "unicode": "e7ac",
+      "unicode_decimal": 59308
+    },
+    {
+      "icon_id": "9065143",
+      "name": "location",
+      "font_class": "ionc--",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "10953502",
+      "name": "bell",
+      "font_class": "bell",
+      "unicode": "e7ab",
+      "unicode_decimal": 59307
+    },
+    {
+      "icon_id": "821106",
+      "name": "my",
+      "font_class": "my",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "20217596",
+      "name": "Order Detail",
+      "font_class": "OrderDetail",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "20329289",
+      "name": "Cart",
+      "font_class": "cart",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "21760734",
+      "name": "home",
+      "font_class": "xuanzhongshangcheng",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}
