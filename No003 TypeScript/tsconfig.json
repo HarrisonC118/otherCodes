@@ -1,0 +1,14 @@
+{
+  "include": [
+      "./src/**/*",
+      "./src/*"
+  ],
+  "compilerOptions": {  // 配置编译器
+      "target": "ES6",  //想编译成哪个版本
+      "outDir": "./dist", // 设置导出ts文件的目录
+      "allowJs": true, // 是否编译目录下得js文件
+      "checkJs": true, //是否检测js中的错误代码
+      "strict": true,
+      "noEmitOnError": true
+  }
+}
