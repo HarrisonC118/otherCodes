@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hatcher.dao.UserDao">
+    <insert id="saveUser" parameterType="com.hatcher.entity.Stu" useGeneratedKeys="true" keyProperty="id">
+        insert into stu values (#{id}, #{name}, #{age})
+    </insert>
+
+    <update id="updateUser" parameterType="com.hatcher.entity.Stu">
+        update stu
+            <set>
+                <if test="name!=null and name!=''">
+                    name = #{name},
+                </if>
+                <if test="age!=null">
+                    age = #{age},
+                </if>
+            </set>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="Integer">
+        delete from stu where id = #{id}
+    </delete>
+
+    <select id="getAllStu" resultType="com.hatcher.entity.Stu">
+        select id,name,age from stu
+    </select>
+
+    <select id="getStuById" resultType="com.hatcher.entity.Stu" parameterType="Integer">
+        select id, name, age from stu where id = #{id}
+    </select>
+
+    <select id="getLikeStu" resultType="com.hatcher.entity.Stu" parameterType="String">
+        select id, name, age from stu where name like concat('%', #{name}, '%')
+    </select>
+
+    <select id="getLimitStu" resultType="com.hatcher.entity.Stu">
+        select id, name, age from stu  limit #{start}, #{rows}
+    </select>
+</mapper>

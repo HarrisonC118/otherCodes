@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.hatcher</groupId>
+    <artifactId>hatcherShop-dev</artifactId>
+    <version>1.0</version>
+    <modules>
+        <module>hatcherShop-dev-common</module>
+        <module>hatcherShop-dev-pojo</module>
+        <module>hatcherShop-dev-mapper</module>
+        <module>hatcherShop-dev-service</module>
+        <module>hatcherShop-dev-api</module>
+    </modules>
+    <!--  把最外层的打包方式变为pom  -->
+    <packaging>pom</packaging>
+    <!--  使用SpringBoot父依赖来管理版本  -->
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.5.0</version>
+        <!--  父项目的pom.xml文件的相对路径。默认值为../pom.xml。  -->
+        <!--  查找顺序：relativePath元素中的地址–>本地仓库–>远程仓库  -->
+        <relativePath/>
+    </parent>
+    <!--  配置项目的编码和java版本  -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <!--  这是Spring Boot的核心启动器，包含了自动配置、日志和YAML  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <!--  不使用sprint-boot自带的日志管理工具  -->
+                <!--                <exclusion>-->
+                <!--                    <groupId>org.springframework.boot</groupId>-->
+                <!--                    <artifactId>spring-boot-starter-logging</artifactId>-->
+                <!--                </exclusion>-->
+            </exclusions>
+        </dependency>
+        <!--  支持全栈式Web开发，包括Tomcat和spring-webmvc。  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--  使用yaml进行配置，也可以使用xml或properties等配置方式  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <!--  可选依赖。别的项目引用这个项目的时候，有optional的不会传递(那个项目用不了这个依赖)  -->
+            <optional>true</optional>
+        </dependency>
+        <!-- mysql驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.22</version>
+        </dependency>
+        <!-- mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <!--mapper-->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>2.1.5</version>
+        </dependency>
+    </dependencies>
+</project>

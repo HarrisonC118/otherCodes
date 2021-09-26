@@ -24,6 +24,24 @@ export const post = (url, data = {}) => {
       )
   })
 }
+export const wangyaoPost = (url, data = {}) => {
+  return new Promise((resolve, reject) => {
+    instance
+      .post("", data, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(
+        response => {
+          resolve(response.data)
+        },
+        err => {
+          reject(err)
+        }
+      )
+  })
+}
 
 export const get = (url, params = {}) => {
   return new Promise((resolve, reject) => {

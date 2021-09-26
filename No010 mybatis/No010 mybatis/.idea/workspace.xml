@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2833ccad-8480-4a8f-adbe-70375a8fca02" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/.idea/No006 AI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/RandomStateTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/VsatckTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/myTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p13_backpropagation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p17_constant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p18_convert_to_tensor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p19_zeros_ones_fill.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p21_random.normal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p22_random.uniform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p23_cast_reduce_minmax.py.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p25_reduce_meansum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p29_add_subtract_multiply_divide.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p30_square_pow_sqrt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p31_matmul.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p33_from_tensor_slices.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p34_GradientTape.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p35_enumerate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p37_one_hot..py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p38_forward.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p39_softmax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p40_assign_sub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p41_argmax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p43_datasets.load_iris.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/p45_iris.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No006 AI/鸢尾花的识别.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No007 算法/.idea/No007 算法.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No007 算法/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No007 算法/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No007 算法/算法/猴子摘桃.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/No008 算法-JAVA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/src/_01_递归/上下车问题/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/src/_01_递归/出售金鱼问题/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No008 算法-JAVA/src/_01_递归/猴子摘桃/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 algorithm/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 algorithm/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 algorithm/.idea/No009 algorithm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 algorithm/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 algorithm/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 algorithm/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 algorithm/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 algorithm/01_recursion/GettingOnAndOff.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 algorithm/01_recursion/MonkeyPickingPeach.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 算法-CLion/.idea/No009 算法-CLion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 算法-CLion/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../No009 算法-CLion/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/Stu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/util/MyBatisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hatcher/TestCUD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hatcher/TestQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../end_homework/_01_servlet/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../end_homework/_01_servlet/src/main/java/com/hatcher/homework/end/No1/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/TestApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/test/java/com/hatcher/YangchenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/CarouselMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsCommentsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsImgMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsParamMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsSpecMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrderItemsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrderStatusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrdersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/UserAddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/UsersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/my/mapper/MyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/CarouselMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsCommentsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsImgMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsParamMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsSpecMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/OrderItemsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/OrderStatusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/OrdersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/UserAddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/UsersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Carousel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsComments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsImg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/OrderItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/UserAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop数据库设计-backup-2021917131127.chnr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop数据库设计-backup-2021917131256.chnr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop数据库设计-backup-2021917133611.chnr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop数据库设计.chnr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/他-backup-2021917125437.chnr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/他-backup-2021917130406.chnr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../yangyaoTest/src/main/java/com/hatcher/WangyaoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../No006 C/01 输出字符的数量.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../No006 C/01 输出字符的数量.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../No006 C/No006 C.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No006 C/No006 C.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../No006 C/No006 C.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../../No006 C/No006 C.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../前端实训/京东商城/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../前端实训/京东商城/src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../前端实训/京东商城/src/views/shop/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../前端实训/京东商城/src/views/shop/Cart.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1ydTeb7wRCcjuAF9qJ9eCNQ9blt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RunManager" selected="JUnit.TestQuery.testLimitStu">
+    <configuration name="TestCUD.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="No010 mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hatcher" />
+      <option name="MAIN_CLASS_NAME" value="com.hatcher.TestCUD" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQuery.testLimitStu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="No010 mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hatcher" />
+      <option name="MAIN_CLASS_NAME" value="com.hatcher.TestQuery" />
+      <option name="METHOD_NAME" value="testLimitStu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQuery.testQueryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="No010 mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hatcher" />
+      <option name="MAIN_CLASS_NAME" value="com.hatcher.TestQuery" />
+      <option name="METHOD_NAME" value="testQueryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQuery.testQueryLike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="No010 mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hatcher" />
+      <option name="MAIN_CLASS_NAME" value="com.hatcher.TestQuery" />
+      <option name="METHOD_NAME" value="testQueryLike" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQuery.testQueryStuById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="No010 mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hatcher" />
+      <option name="MAIN_CLASS_NAME" value="com.hatcher.TestQuery" />
+      <option name="METHOD_NAME" value="testQueryStuById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestQuery.testLimitStu" />
+        <item itemvalue="JUnit.TestQuery.testQueryLike" />
+        <item itemvalue="JUnit.TestCUD.save" />
+        <item itemvalue="JUnit.TestQuery.testQueryStuById" />
+        <item itemvalue="JUnit.TestQuery.testQueryAll" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="2833ccad-8480-4a8f-adbe-70375a8fca02" name="更改" comment="" />
+      <created>1632580562623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632580562623</updated>
+      <workItem from="1632580564804" duration="1405000" />
+      <workItem from="1632625403839" duration="8880000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

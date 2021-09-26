@@ -13,7 +13,7 @@
         <span>总计:</span>
         <span class="info__price">&yen;{{ total.money }}</span>
       </div>
-      <div class="check__btn">去结算</div>
+      <div class="check__btn" @click="wangyao">去结算</div>
     </div>
   </div>
 </template>
@@ -21,6 +21,7 @@
 import { useStore } from 'vuex'
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
+import { post } from '../../utils/request.js'
 export default {
   name: 'Cart',
   setup () {
@@ -28,6 +29,38 @@ export default {
     const route = useRoute()
     const shopId = route.params.id
     const cartList = store.state.cartList
+
+    const wangyao = async () => {
+      // await关键字只能在async修饰的函数中使用，用来等待一个 Promise 对象
+      try {
+        const result = await post('/isLogin', {
+          userName: user.userName,
+          passWord: user.passWord
+        })
+        console.log(result)
+        if (result?.errno === 0) {
+          mes.value = '登录成功！'
+          isShowToast.value = true
+          setTimeout(() => {
+            isShowToast.value = false
+            localStorage.isLogin = true
+            router.push({ name: 'Home' })
+          }, 2000)
+        } else {
+          mes.value = '登录失败！'
+          isShowToast.value = true
+          setTimeout(() => {
+            isShowToast.value = false
+          }, 2000)
+        }
+      } catch (e) {
+        mes.value = '连接服务器失败！'
+        isShowToast.value = true
+        setTimeout(() => {
+          isShowToast.value = false
+        }, 2000)
+      }
+    }
 
     const total = computed(() => {
       const itemList = cartList[shopId]
@@ -43,7 +76,8 @@ export default {
       return { count, money }
     })
     return {
-      total
+      total,
+      wangyao
     }
   }
 }
