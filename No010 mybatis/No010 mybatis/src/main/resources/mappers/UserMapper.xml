@@ -3,6 +3,30 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hatcher.dao.UserDao">
+    <!--  id：这个resultMap的名字，type：要被封装成的对象  -->
+    <resultMap id="userResultMap" type="com.hatcher.entity.Stu">
+        <!--  column是数据库中的名字， property是java对象属性的名字 -->
+        <!--  主键要单独用id标签映射 -->
+        <id column="uid" property="id"/>
+        <!--  其他属性用result映射 -->
+        <result column="uname" property="name"/>
+        <!--  ===============================================  -->
+        <!--  比如一个学生有一部手机，学生和手机是两个不同的类  -->
+        <!--  association用来处理一对一的关系  -->
+        <!--  property是java对象属性的名字 javaType是属性名字对应的类名-->
+        <association property="info" javaType="com.hatcher.entity.Info">
+            <id column="iid" property="id"/>
+            <result column="iname" property="name"/>
+        </association>
+        <!--  ===============================================  -->
+        <!--  比如一个学生只在一个教室上课，一间教室有一堆学生  -->
+        <!--  collection用来处理一对多的关系  -->
+        <!--  property是java对象属性的名字 javaType是属性名字对应的类名 ofType是泛型的类型(list里面装的类是什么类型)-->
+        <collection property="info" javaType="list" ofType="">
+            <id column="iid" property="id"/>
+            <result column="iname" property="name"/>
+        </collection>
+    </resultMap>
     <insert id="saveUser" parameterType="com.hatcher.entity.Stu" useGeneratedKeys="true" keyProperty="id">
         insert into stu values (#{id}, #{name}, #{age})
     </insert>
