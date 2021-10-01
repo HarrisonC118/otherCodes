@@ -6,10 +6,7 @@
  * 问猴子们摘来了多少桃子？
  */
 
- /**
-  * @author: HatcherCheung
-  * Date:  2021/9/13
-  */
+
 const int HZZT_TOTAL_DAY = 9;
 /**
  * @param day 当前是第几天
