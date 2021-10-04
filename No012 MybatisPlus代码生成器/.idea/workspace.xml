@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b59c815-4f7a-43d8-8064-360ec08f1997" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../No011 spring/src/main/java/com/hatcher/aop/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No011 spring/src/main/java/com/hatcher/aop/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No011 spring/src/main/java/com/hatcher/aop/UserServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyAutoGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/MyAutoGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/CarouselMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/CategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/ItemsCommentsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/ItemsImgMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/ItemsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/ItemsParamMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/ItemsSpecMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/OrderItemsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/OrderStatusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/OrdersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/UserAddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/UsersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/TestUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/CarouselMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/CategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsCommentsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsImgMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsParamMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsSpecMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrderItemsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrderStatusMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrdersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/UserAddressMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/UsersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/my/mapper/MyMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/CarouselMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsCommentsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsImgMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsParamMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsSpecMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/OrderItemsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/OrderStatusMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/OrdersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/UserAddressMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/UsersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Carousel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Items.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsComments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsImg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsSpec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/OrderItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/OrderStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Orders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/UserAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1z29CuYQfcX1jVqJJOEjXh8wUy3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RunManager">
+    <configuration name="MyAutoGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyAutoGenerator" />
+      <module name="No012 MybatisPlus代码生成器" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.MyAutoGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="9b59c815-4f7a-43d8-8064-360ec08f1997" name="更改" comment="" />
+      <created>1633335192230</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633335192230</updated>
+      <workItem from="1633335194551" duration="2378000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
