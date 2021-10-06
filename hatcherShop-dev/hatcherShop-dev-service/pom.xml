@@ -16,6 +16,11 @@
             <artifactId>hatcherShop-dev-mapper</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.hatcher</groupId>
+            <artifactId>hatcherShop-dev-pojo</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

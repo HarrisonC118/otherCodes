@@ -1,7 +1,16 @@
 package com.hatcher.mapper;
 
-import com.hatcher.my.mapper.MyMapper;
-import com.hatcher.pojo.ItemsImg;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.hatcher.entity.ItemsImg;
 
-public interface ItemsImgMapper extends MyMapper<ItemsImg> {
+/**
+ * <p>
+ * 商品图片  Mapper 接口
+ * </p>
+ *
+ * @author HatcherCheung
+ * @since 2021-10-05
+ */
+public interface ItemsImgMapper extends BaseMapper<ItemsImg> {
+
 }

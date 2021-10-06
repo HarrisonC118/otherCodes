@@ -39,15 +39,3 @@ server:
   max-http-header-size: 80KB
   servlet:
     context-path: /hatcher
-
-############################################################
-#
-# mybatis mapper 配置
-#
-############################################################
-# 通用 Mapper 配置
-mapper:
-  mappers: com.hatcher.my.mapper.MyMapper
-  not-empty: false # 在判断属性为Null(!=null)时，可以自动在sql语句中追加 !=''
-  identity: MYSQL
-

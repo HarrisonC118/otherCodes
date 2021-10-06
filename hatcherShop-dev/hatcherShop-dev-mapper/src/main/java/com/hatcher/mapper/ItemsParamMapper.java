@@ -1,7 +1,16 @@
 package com.hatcher.mapper;
 
-import com.hatcher.my.mapper.MyMapper;
-import com.hatcher.pojo.ItemsParam;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.hatcher.entity.ItemsParam;
 
-public interface ItemsParamMapper extends MyMapper<ItemsParam> {
+/**
+ * <p>
+ * 商品参数  Mapper 接口
+ * </p>
+ *
+ * @author HatcherCheung
+ * @since 2021-10-05
+ */
+public interface ItemsParamMapper extends BaseMapper<ItemsParam> {
+
 }

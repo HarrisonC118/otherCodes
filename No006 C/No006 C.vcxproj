@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="01 输出字符的数量.c" />
     <ClCompile Include="02 sprintf和fprintf和stdout.c" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

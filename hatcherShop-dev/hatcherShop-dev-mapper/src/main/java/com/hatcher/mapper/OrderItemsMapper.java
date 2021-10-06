@@ -1,7 +1,16 @@
 package com.hatcher.mapper;
 
-import com.hatcher.my.mapper.MyMapper;
-import com.hatcher.pojo.OrderItems;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.hatcher.entity.OrderItems;
 
-public interface OrderItemsMapper extends MyMapper<OrderItems> {
+/**
+ * <p>
+ * 订单商品关联表  Mapper 接口
+ * </p>
+ *
+ * @author HatcherCheung
+ * @since 2021-10-05
+ */
+public interface OrderItemsMapper extends BaseMapper<OrderItems> {
+
 }

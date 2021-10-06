@@ -19,12 +19,14 @@ public class MyAutoGenerator {
                             .outputDir("./src/main/java"); // 指定输出目录
                 })
                 .packageConfig(builder -> {
-                    builder.parent("com.hatcher.mappers") // 设置父包名
+                    builder.parent("com.hatcher") // 设置父包名
                             .pathInfo(Collections.singletonMap(OutputFile.mapperXml, "./src/main/resources/mappers")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
                     builder.addInclude("carousel","category","users","user_address","items","items_img",
-                                    "items_spec","items_param","items_comments","orders","order_items","order_status"); // 设置需要生成的表名
+                                    "items_spec","items_param","items_comments","orders","order_items","order_status") // 设置需要生成的表名
+                            .mapperBuilder()
+                            .enableBaseResultMap();
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
                 .execute();

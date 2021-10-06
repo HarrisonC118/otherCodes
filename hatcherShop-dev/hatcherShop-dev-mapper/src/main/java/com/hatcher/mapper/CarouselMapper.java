@@ -1,7 +1,16 @@
 package com.hatcher.mapper;
 
-import com.hatcher.my.mapper.MyMapper;
-import com.hatcher.pojo.Carousel;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.hatcher.entity.Carousel;
 
-public interface CarouselMapper extends MyMapper<Carousel> {
+/**
+ * <p>
+ * 轮播图  Mapper 接口
+ * </p>
+ *
+ * @author HatcherCheung
+ * @since 2021-10-05
+ */
+public interface CarouselMapper extends BaseMapper<Carousel> {
+
 }
