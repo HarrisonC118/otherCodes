@@ -39,11 +39,16 @@
             <artifactId>spring-boot-starter</artifactId>
             <exclusions>
                 <!--  不使用sprint-boot自带的日志管理工具  -->
-                <!--                <exclusion>-->
-                <!--                    <groupId>org.springframework.boot</groupId>-->
-                <!--                    <artifactId>spring-boot-starter-logging</artifactId>-->
-                <!--                </exclusion>-->
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
             </exclusions>
+        </dependency>
+        <!--  整合自己的日志框架  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
         <!--  支持全栈式Web开发，包括Tomcat和spring-webmvc。  -->
         <dependency>
