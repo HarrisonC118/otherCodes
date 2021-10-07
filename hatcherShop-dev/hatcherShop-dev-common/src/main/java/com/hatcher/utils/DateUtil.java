@@ -6,6 +6,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.*;
 
 public class DateUtil {
@@ -202,7 +205,7 @@ public class DateUtil {
      * @param isoString
      * @param field     the time field.
      * @param up        Indicates if rolling up or rolling down the field value.
-     * @param expanded  use formating char's
+     * @param fmt       use formating char's
      * @throws ParseException if an unknown field value is given.
      */
     public static final String roll(String isoString, String fmt, int field,
@@ -239,18 +242,12 @@ public class DateUtil {
      * @param lenient
      * @return
      */
-    public static Date stringToDate(String dateText, String format,
-                                    boolean lenient) {
-
+    public static Date stringToDate(String dateText, String format, boolean lenient) {
         if (dateText == null) {
-
             return null;
         }
-
         DateFormat df = null;
-
         try {
-
             if (format == null) {
                 df = new SimpleDateFormat();
             } else {
@@ -260,10 +257,8 @@ public class DateUtil {
             // setLenient avoids allowing dates like 9/32/2001
             // which would otherwise parse to 10/2/2001
             df.setLenient(false);
-
             return df.parse(dateText);
         } catch (ParseException e) {
-
             return null;
         }
     }
@@ -278,19 +273,18 @@ public class DateUtil {
     /**
      * java.util.Date
      *
-     * @param dateText
+     * @param dateString
      * @param format
      * @return
      */
     public static Date stringToDate(String dateString, String format) {
-
         return stringToDate(dateString, format, LENIENT_DATE);
     }
 
     /**
      * java.util.Date
      *
-     * @param dateText
+     * @param
      */
     public static Date stringToDate(String dateString) {
         return stringToDate(dateString, ISO_EXPANDED_DATE_FORMAT, LENIENT_DATE);
@@ -361,7 +355,6 @@ public class DateUtil {
      * 返回固定格式的当前时间
      * yyyy-MM-dd hh:mm:ss
      *
-     * @param date
      * @return
      */
     public static String dateToStringWithTime() {
@@ -398,7 +391,7 @@ public class DateUtil {
 
     /**
      * @param date
-     * @param days
+     * @param mnt
      * @return java.util.Date
      */
     public static Date dateIncreaseByMonth(Date date, int mnt) {
@@ -644,11 +637,33 @@ public class DateUtil {
         }
     }
 
-    public static void main(String[] args) {
-//    	String timeDir=DateUtil.dateToString(new Date(),DateUtil.ISO_EXPANDED_DATE_FORMAT);
-//		System.out.println(timeDir);
-        boolean flag = DateUtil.isValidDate("1990-10-32", DateUtil.ISO_EXPANDED_DATE_FORMAT);
-        System.out.println(flag);
+    /**
+     * 返回一个LocalDate类型的数据
+     *
+     * @param dateString
+     * @return
+     */
+    public static LocalDate stringToLocalDate(String dateString) {
+        return stringToDate(dateString, ISO_EXPANDED_DATE_FORMAT, LENIENT_DATE).toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDate();
     }
 
+    public static LocalDate stringToLocalDate(String dateString, String format) {
+        return stringToDate(dateString, format, LENIENT_DATE).toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDate();
+    }
+
+    public static LocalDate stringToLocalDate(String dateText, String format, boolean lenient) {
+        return stringToDate(dateText, format, lenient).toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDate();
+    }
+
+    public static LocalDateTime dateToLocalDateTime(Date date) {
+        return date.toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDateTime();
+    }
 }

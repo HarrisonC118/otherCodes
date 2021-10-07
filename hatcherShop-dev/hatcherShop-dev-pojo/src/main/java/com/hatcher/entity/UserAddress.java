@@ -22,7 +22,7 @@ public class UserAddress implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("地址主键id")
-    private String id;
+    private Long id;
 
     @ApiModelProperty("关联用户id")
     private String userId;
@@ -57,11 +57,11 @@ public class UserAddress implements Serializable {
     @ApiModelProperty("更新时间")
     private LocalDateTime updatedTime;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

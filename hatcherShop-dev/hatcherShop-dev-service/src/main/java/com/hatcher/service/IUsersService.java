@@ -1,6 +1,7 @@
 package com.hatcher.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.hatcher.bo.UserBO;
 import com.hatcher.entity.Users;
 
 /**
@@ -19,4 +20,12 @@ public interface IUsersService extends IService<Users> {
      * @return 存在返回true, 不存在返回false
      */
     public boolean queryUsernameIsExist(String username);
+
+    /**
+     * 创建用户
+     *
+     * @param userBO 要创建的对象
+     * @return 创建完的对象
+     */
+    public Users createUser(UserBO userBO);
 }
