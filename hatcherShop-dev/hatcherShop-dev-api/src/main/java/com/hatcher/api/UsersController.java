@@ -37,7 +37,6 @@ public class UsersController {
     @GetMapping("/usernameIsExist")
     @ApiOperation(value = "判断用户是否存在", notes = "判断用户是否存在，先判断是不是空字符串，在判断是否存在。存在或空返回500错误", httpMethod = "GET")
     public JsonResult usernameIsExist(@RequestParam(value = "username", required = true) String username) {
-        looger.info("======开始判断用户是否存在======");
         // 比较传入的username 是不是空字符串
         if (StringUtils.isBlank(username)) {
             // 如果是，就返回500错误
@@ -57,7 +56,6 @@ public class UsersController {
     @PostMapping("/regist")
     @ApiOperation(value = "注册", notes = "用户注册。先判断是不是空字符串，在判断是否存在，密码是不是少于六位，确认密码和密码是否一致。", httpMethod = "POST")
     public JsonResult regist(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response) {
-        looger.info("======用户注册信息======");
         String username = userBO.getUsername();
         String password = userBO.getPassword();
         String confirmPwd = userBO.getConfirmPassword();
@@ -94,7 +92,6 @@ public class UsersController {
     @PostMapping("/login")
     @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "POST")
     public JsonResult login(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response) {
-        looger.info("======用户开始登录======");
         String username = userBO.getUsername();
         String password = userBO.getPassword();
         // 判断用户名和密码不为空
