@@ -65,4 +65,12 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         usersDao.insert(user);
         return user;
     }
+
+    @Override
+    public Users queryUserForLogin(String username, String password) {
+        QueryWrapper<Users> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("username", username);
+        queryWrapper.eq("password", password);
+        return usersDao.selectOne(queryWrapper);
+    }
 }

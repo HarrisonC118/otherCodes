@@ -2,13 +2,20 @@ package com.hatcher.api;
 
 
 import com.hatcher.bo.UserBO;
+import com.hatcher.entity.Users;
 import com.hatcher.service.impl.UsersServiceImpl;
+import com.hatcher.utils.CookieUtils;
 import com.hatcher.utils.JsonResult;
+import com.hatcher.utils.JsonUtils;
+import com.hatcher.utils.MD5Utils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * <p>
@@ -43,7 +50,7 @@ public class UsersController {
 
     @PostMapping("/regist")
     @ApiOperation(value = "注册", notes = "用户注册。先判断是不是空字符串，在判断是否存在，密码是不是少于六位，确认密码和密码是否一致。", httpMethod = "POST")
-    public JsonResult regist(@RequestBody UserBO userBO) {
+    public JsonResult regist(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response) {
         String username = userBO.getUsername();
         String password = userBO.getPassword();
         String confirmPwd = userBO.getConfirmPassword();
@@ -64,7 +71,53 @@ public class UsersController {
             return JsonResult.errorMsg("两次密码不一致！请重试！");
         }
         // 实现注册
-        usersService.createUser(userBO);
+        Users user = usersService.createUser(userBO);
+        // 设置部分用户信息不作为json字符串返回
+        user = setNullProperty(user);
+        // 设置cookie
+        CookieUtils.setCookie(request, response, "userInfo", JsonUtils.objectToJson(user), true);
         return JsonResult.ok("注册成功！");
+    }
+
+    @PostMapping("/login")
+    @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "POST")
+    public JsonResult login(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response) {
+        String username = userBO.getUsername();
+        String password = userBO.getPassword();
+        // 判断用户名和密码不为空
+        if (StringUtils.isBlank(username)) {
+            return JsonResult.errorMsg("您输入的内容为空！请重试！");
+        }
+        // 判断密码不少于6位
+        if (password.length() < 6) {
+            return JsonResult.errorMsg("密码长度不能少于6位！请重试！");
+        }
+
+        // 实现登录
+        Users user = null;
+        try {
+            user = usersService.queryUserForLogin(username, MD5Utils.getMD5Str(password));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (user == null) {
+            return JsonResult.errorMsg("用户名或密码错误！");
+        }
+
+        // 设置部分用户信息不作为json字符串返回
+        user = setNullProperty(user);
+        // 设置cookie
+        CookieUtils.setCookie(request, response, "userInfo", JsonUtils.objectToJson(user), true);
+        return JsonResult.ok(user);
+    }
+
+    private Users setNullProperty(Users user) {
+        user.setPassword(null);
+        user.setMobile(null);
+        user.setEmail(null);
+        user.setCreatedTime(null);
+        user.setUpdatedTime(null);
+        user.setBirthday(null);
+        return user;
     }
 }

@@ -28,4 +28,13 @@ public interface IUsersService extends IService<Users> {
      * @return 创建完的对象
      */
     public Users createUser(UserBO userBO);
+
+    /**
+     * 用户登录
+     *
+     * @param username 用户名
+     * @param password 密码
+     * @return 成功的对象
+     */
+    public Users queryUserForLogin(String username, String password);
 }

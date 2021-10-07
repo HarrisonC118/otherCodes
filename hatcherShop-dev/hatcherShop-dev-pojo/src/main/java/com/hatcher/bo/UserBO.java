@@ -7,11 +7,11 @@ import io.swagger.annotations.ApiModelProperty;
  * Date:  2021/10/6
  */
 public class UserBO {
-    @ApiModelProperty("需要注册的用户名")
+    @ApiModelProperty(value = "需要注册的用户名", required = true)
     private String username;
-    @ApiModelProperty("密码")
+    @ApiModelProperty(value = "密码", required = true)
     private String password;
-    @ApiModelProperty("确认密码")
+    @ApiModelProperty(value = "确认密码", required = false)
     private String confirmPassword;
 
     public String getUsername() {
