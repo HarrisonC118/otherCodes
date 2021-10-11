@@ -19,7 +19,7 @@ public interface IUsersService extends IService<Users> {
      * @param username 用户名
      * @return 存在返回true, 不存在返回false
      */
-    public boolean queryUsernameIsExist(String username);
+    boolean queryUsernameIsExist(String username);
 
     /**
      * 创建用户
@@ -27,7 +27,7 @@ public interface IUsersService extends IService<Users> {
      * @param userBO 要创建的对象
      * @return 创建完的对象
      */
-    public Users createUser(UserBO userBO);
+    Users createUser(UserBO userBO);
 
     /**
      * 用户登录
@@ -36,5 +36,5 @@ public interface IUsersService extends IService<Users> {
      * @param password 密码
      * @return 成功的对象
      */
-    public Users queryUserForLogin(String username, String password);
+    Users queryUserForLogin(String username, String password);
 }

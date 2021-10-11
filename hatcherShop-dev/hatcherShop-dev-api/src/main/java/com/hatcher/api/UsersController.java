@@ -3,7 +3,7 @@ package com.hatcher.api;
 
 import com.hatcher.bo.UserBO;
 import com.hatcher.entity.Users;
-import com.hatcher.service.impl.UsersServiceImpl;
+import com.hatcher.service.IUsersService;
 import com.hatcher.utils.CookieUtils;
 import com.hatcher.utils.JsonResult;
 import com.hatcher.utils.JsonUtils;
@@ -29,10 +29,11 @@ import javax.servlet.http.HttpServletResponse;
  */
 @RestController
 @Api(tags = "用户操作的接口")
+@RequestMapping("user")
 public class UsersController {
     final static Logger looger = LoggerFactory.getLogger(UsersController.class);
     @Autowired
-    private UsersServiceImpl usersService;
+    private IUsersService usersService;
 
     @GetMapping("/usernameIsExist")
     @ApiOperation(value = "判断用户是否存在", notes = "判断用户是否存在，先判断是不是空字符串，在判断是否存在。存在或空返回500错误", httpMethod = "GET")
