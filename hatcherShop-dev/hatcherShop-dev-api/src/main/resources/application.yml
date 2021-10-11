@@ -39,3 +39,6 @@ server:
   max-http-header-size: 80KB
   servlet:
     context-path: /hatcher
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
