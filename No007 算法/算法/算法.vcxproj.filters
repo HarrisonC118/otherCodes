@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\递归">
+      <UniqueIdentifier>{e706a376-e87f-44d9-a2df-383bcee3147e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\归并与排序">
+      <UniqueIdentifier>{90834c87-b352-4be6-b92d-d61f00a4b461}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="猴子摘桃.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="上下车问题.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="出售金鱼.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="小华读书.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="发奖牌问题.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="快速排序.c">
+      <Filter>源文件\归并与排序</Filter>
+    </ClCompile>
+    <ClCompile Include="国王分财产.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="分橘子问题.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="传染病问题.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="递归倒序输出.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="走台阶问题.c">
+      <Filter>源文件\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="A星算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="合并排序.c">
+      <Filter>源文件\归并与排序</Filter>
+    </ClCompile>
+    <ClCompile Include="棋盘覆盖.c">
+      <Filter>源文件\归并与排序</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
