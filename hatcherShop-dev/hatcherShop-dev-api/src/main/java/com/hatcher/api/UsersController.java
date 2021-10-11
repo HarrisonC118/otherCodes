@@ -125,8 +125,17 @@ public class UsersController {
         return JsonResult.ok(user);
     }
 
+    @ApiOperation(value = "退出登录", notes = "用户退出登录", httpMethod = "POST")
+    @PostMapping("/logout")
+    public JsonResult logout(@RequestParam String userId, HttpServletRequest request, HttpServletResponse response) {
+        // 清除浏览器中的cookie
+        CookieUtils.deleteCookie(request, response, "userInfo");
+        // TODO 用户退出登录需要清空购物车
+        // TODO 分布式回话中需要清除用户数据
+        return JsonResult.ok("退出登录成功！");
+    }
+
     private Users setNullProperty(Users user) {
-        looger.info("======设置用户：" + user.getUsername() + "不必要的信息为null======");
         user.setPassword(null);
         user.setMobile(null);
         user.setEmail(null);

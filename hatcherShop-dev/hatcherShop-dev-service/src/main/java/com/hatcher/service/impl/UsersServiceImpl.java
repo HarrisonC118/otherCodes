@@ -14,8 +14,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
-
 /**
  * <p>
  * 用户表  服务实现类
@@ -59,8 +57,6 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         user.setBirthday(DateUtil.stringToLocalDate("1999-09-09"));
         // 生日类型使用枚举
         user.setSex(Sex.secret.type);
-        user.setCreatedTime(DateUtil.dateToLocalDateTime(new Date()));
-        user.setUpdatedTime(DateUtil.dateToLocalDateTime(new Date()));
         System.out.println(user);
         usersDao.insert(user);
         return user;

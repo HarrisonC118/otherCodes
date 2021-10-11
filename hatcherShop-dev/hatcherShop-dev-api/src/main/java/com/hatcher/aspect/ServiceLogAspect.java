@@ -52,4 +52,20 @@ public class ServiceLogAspect {
         }
         return result;
     }
+
+    @Around("execution(* com.hatcher.config.MyMetaObjectHandler.insertFill(..))")
+    public Object autoFillLogForInsert(ProceedingJoinPoint joinPoint) throws Throwable {
+        logger.info("start insert fill {}.{}....",
+                joinPoint.getTarget().getClass(),
+                joinPoint.getSignature().getName());
+        return joinPoint.proceed();
+    }
+
+    @Around("execution(* com.hatcher.config.MyMetaObjectHandler.updateFill(..))")
+    public Object autoFillLogForUpdate(ProceedingJoinPoint joinPoint) throws Throwable {
+        logger.info("start update fill {}.{}....",
+                joinPoint.getTarget().getClass(),
+                joinPoint.getSignature().getName());
+        return joinPoint.proceed();
+    }
 }
