@@ -1,5 +1,6 @@
 package com.hatcher.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -22,6 +23,7 @@ public class ItemsComments implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("id主键")
+    @TableId
     private String id;
 
     @ApiModelProperty("用户id 用户名须脱敏")

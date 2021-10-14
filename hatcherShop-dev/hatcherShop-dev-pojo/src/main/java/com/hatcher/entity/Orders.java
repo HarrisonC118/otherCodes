@@ -1,5 +1,6 @@
 package com.hatcher.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -20,6 +21,7 @@ public class Orders implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("订单主键;同时也是订单编号")
+    @TableId
     private String id;
 
     @ApiModelProperty("用户id")

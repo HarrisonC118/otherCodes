@@ -25,8 +25,8 @@ spring:
 #
 ############################################################
 mybatis:
-  type-aliases-package: com.hatcher.pojo # 所有POJO类所在包路径
-  mapper-locations: classpath:mapper/*.xml # mapper映射文件
+  type-aliases-package: com.hatcher # 所有POJO类所在包路径
+  mapper-locations: classpath:mappers/*.xml # mapper映射文件
 ############################################################
 #
 # web访问端口号 约定：8088
@@ -42,3 +42,4 @@ server:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mappers/*.xml

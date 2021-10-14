@@ -1,5 +1,6 @@
 package com.hatcher.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -22,6 +23,7 @@ public class UserAddress implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("地址主键id")
+    @TableId
     private Long id;
 
     @ApiModelProperty("关联用户id")

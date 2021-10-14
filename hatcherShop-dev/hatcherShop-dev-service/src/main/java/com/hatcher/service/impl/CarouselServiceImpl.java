@@ -7,6 +7,8 @@ import com.hatcher.mapper.CarouselMapper;
 import com.hatcher.service.ICarouselService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -24,6 +26,7 @@ public class CarouselServiceImpl extends ServiceImpl<CarouselMapper, Carousel> i
     private CarouselMapper carouselDao;
 
     @Override
+    @Transactional(propagation = Propagation.SUPPORTS, rollbackFor = Exception.class)
     public List<Carousel> getAllCarousel(Integer isShow) {
         QueryWrapper<Carousel> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("is_show", isShow);
@@ -31,4 +34,5 @@ public class CarouselServiceImpl extends ServiceImpl<CarouselMapper, Carousel> i
         List<Carousel> carousels = carouselDao.selectList(queryWrapper);
         return carousels;
     }
+
 }

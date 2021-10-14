@@ -1,5 +1,6 @@
 package com.hatcher.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -20,6 +21,7 @@ public class Carousel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("主键")
+    @TableId
     private String id;
 
     @ApiModelProperty("图片 图片地址")

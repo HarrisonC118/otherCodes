@@ -1,8 +1,8 @@
 package com.hatcher.api;
 
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author HatcherCheung
  * @since 2021-10-05
  */
-@Controller
+@RestController
 @RequestMapping("/category")
 public class CategoryController {
 

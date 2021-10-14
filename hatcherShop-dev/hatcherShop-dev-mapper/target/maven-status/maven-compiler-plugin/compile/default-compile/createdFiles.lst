@@ -1,12 +1,13 @@
 com\hatcher\mapper\ItemsSpecMapper.class
 com\hatcher\mapper\UsersMapper.class
 com\hatcher\mapper\CategoryMapper.class
+com\hatcher\mapper\UserAddressMapper.class
+com\hatcher\mapper\CategoryCustomMapper.class
+com\hatcher\mapper\ItemsCommentsMapper.class
 com\hatcher\mapper\ItemsParamMapper.class
 com\hatcher\mapper\CarouselMapper.class
 com\hatcher\mapper\OrdersMapper.class
 com\hatcher\mapper\OrderStatusMapper.class
 com\hatcher\mapper\ItemsImgMapper.class
 com\hatcher\mapper\OrderItemsMapper.class
-com\hatcher\mapper\UserAddressMapper.class
 com\hatcher\mapper\ItemsMapper.class
-com\hatcher\mapper\ItemsCommentsMapper.class

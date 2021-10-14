@@ -1,0 +1,17 @@
+com\hatcher\api\OrdersController.class
+com\hatcher\TestApp.class
+com\hatcher\api\ItemsCommentsController.class
+com\hatcher\api\CategoryController.class
+com\hatcher\api\ItemsSpecController.class
+com\hatcher\aspect\ServiceLogAspect.class
+com\hatcher\api\OrderStatusController.class
+com\hatcher\api\ItemsImgController.class
+com\hatcher\config\MyMetaObjectHandler.class
+com\hatcher\config\Swagger2Configuration.class
+com\hatcher\api\ItemsParamController.class
+com\hatcher\api\CarouselController.class
+com\hatcher\api\UsersController.class
+com\hatcher\config\CorsConfig.class
+com\hatcher\api\ItemsController.class
+com\hatcher\api\OrderItemsController.class
+com\hatcher\api\UserAddressController.class

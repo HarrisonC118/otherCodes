@@ -1,5 +1,6 @@
 package com.hatcher.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -23,6 +24,7 @@ public class ItemsSpec implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("商品规格id")
+    @TableId
     private String id;
 
     @ApiModelProperty("商品外键id")

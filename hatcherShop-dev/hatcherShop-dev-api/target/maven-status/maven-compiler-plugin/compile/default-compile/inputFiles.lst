@@ -1,6 +1,8 @@
 E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\api\CategoryController.java
 E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\api\UserAddressController.java
+E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\config\MyMetaObjectHandler.java
 E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\api\UsersController.java
+E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\aspect\ServiceLogAspect.java
 E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\api\OrdersController.java
 E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\TestApp.java
 E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\api\OrderItemsController.java
@@ -12,3 +14,4 @@ E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\h
 E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\api\ItemsCommentsController.java
 E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\api\ItemsParamController.java
 E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\config\Swagger2Configuration.java
+E:\code\code-exercise-20\hatcherShop-dev\hatcherShop-dev-api\src\main\java\com\hatcher\config\CorsConfig.java
