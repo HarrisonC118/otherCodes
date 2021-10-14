@@ -3,6 +3,7 @@ package com.hatcher.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.hatcher.entity.Category;
 import com.hatcher.vo.CategoryVo;
+import com.hatcher.vo.ItemsVo;
 
 import java.util.List;
 
@@ -29,4 +30,13 @@ public interface ICategoryService extends IService<Category> {
      * @return
      */
     List<CategoryVo> getSubCatList(Integer rootId);
+
+    /**
+     * 获得大类下面的最新更新的6条商品信息
+     * 前端会使用懒加载的方式请求数据
+     *
+     * @param rootId 父类的id
+     * @return
+     */
+    List<ItemsVo> getSixNewItemsLazy(Object rootId);
 }

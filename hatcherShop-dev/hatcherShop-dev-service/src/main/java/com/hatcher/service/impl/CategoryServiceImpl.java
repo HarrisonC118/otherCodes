@@ -6,12 +6,15 @@ import com.hatcher.entity.Category;
 import com.hatcher.mapper.CategoryMapper;
 import com.hatcher.service.ICategoryService;
 import com.hatcher.vo.CategoryVo;
+import com.hatcher.vo.ItemsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -38,7 +41,15 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
     @Override
     @Transactional(propagation = Propagation.SUPPORTS, rollbackFor = Exception.class)
     public List<CategoryVo> getSubCatList(Integer rootId) {
-        List subCatList = categoryDao.getSubCatList(rootId);
-        return subCatList;
+        return categoryDao.getSubCatList(rootId);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS, rollbackFor = Exception.class)
+    public List<ItemsVo> getSixNewItemsLazy(Object rootId) {
+        Map<String, Object> map = new HashMap<>();
+        // 因为父类的id不一定是int类型的，还有可能是string类型的，所以用map传
+        map.put("rootCatId", rootId);
+        return categoryDao.getSixNewItemsLazy(map);
     }
 }
