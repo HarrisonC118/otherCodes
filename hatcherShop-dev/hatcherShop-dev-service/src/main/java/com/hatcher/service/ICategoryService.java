@@ -23,7 +23,7 @@ public interface ICategoryService extends IService<Category> {
     List<Category> queryRootLevelCat();
 
     /**
-     * 根据父类获得所有的子类(中类和小类)
+     * 根据父类的ID获得所有的子类(中类和小类)
      *
      * @param rootId 父类的id
      * @return
