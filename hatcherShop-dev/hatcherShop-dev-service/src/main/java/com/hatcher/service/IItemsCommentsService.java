@@ -18,5 +18,7 @@ public interface IItemsCommentsService extends IService<ItemsComments> {
      *
      * @param itemId 商品id
      */
-    public CommentLevelCountsVo queryCommentCounts(String itemId);
+    CommentLevelCountsVo queryCommentCounts(String itemId);
+
+
 }
