@@ -7,3 +7,7 @@ export type TodoNode = {
   name: string;
   completed: boolean;
 };
+export type UserLoginInfo = {
+  username: string;
+  password: string;
+};

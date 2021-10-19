@@ -9,6 +9,7 @@ import com.hatcher.vo.ItemCommentsVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -49,14 +50,26 @@ public class ItemsCommentsController extends BaseController {
             @ApiParam(name = "itemId", value = "需要查询的商品id号", required = true)
                     String itemId,
             @RequestParam("level")
-            @ApiParam(name = "level", value = "需要查询的评论等级", defaultValue = "1")
+            @ApiParam(name = "level", value = "需要查询的评论等级")
                     Integer level,
             @RequestParam("pageNum")
-            @ApiParam(name = "pageNum", value = "当前是第几页", defaultValue = "1")
+            @ApiParam(name = "pageNum", value = "当前是第几页")
                     Integer pageNum,
             @RequestParam("pageSize")
-            @ApiParam(name = "pageSize", value = "一页显示多少条评论", defaultValue = COMMENT_PAGE_SIZE)
+            @ApiParam(name = "pageSize", value = "一页显示多少条评论")
                     Integer pageSize) {
+        if (level == null) {
+            level = 1;
+        }
+        if (pageNum == null) {
+            pageNum = 1;
+        }
+        if (pageSize == null) {
+            pageSize = COMMENT_PAGE_SIZE;
+        }
+        if (StringUtils.isBlank(itemId)) {
+            return JsonResult.errorMsg("请求错误！");
+        }
         List<ItemCommentsVo> itemCommentsVos = iItemsCommentsService.queryItemComments(pageNum, pageSize, level, itemId);
         return JsonResult.ok(itemCommentsVos);
     }

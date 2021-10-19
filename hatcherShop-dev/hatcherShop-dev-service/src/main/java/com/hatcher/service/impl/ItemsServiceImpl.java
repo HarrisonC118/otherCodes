@@ -1,6 +1,7 @@
 package com.hatcher.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hatcher.entity.Items;
 import com.hatcher.entity.ItemsImg;
@@ -11,6 +12,7 @@ import com.hatcher.mapper.ItemsMapper;
 import com.hatcher.mapper.ItemsParamMapper;
 import com.hatcher.mapper.ItemsSpecMapper;
 import com.hatcher.service.IItemsService;
+import com.hatcher.vo.SearchItemsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -67,5 +69,11 @@ public class ItemsServiceImpl extends ServiceImpl<ItemsMapper, Items> implements
         QueryWrapper<Items> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("id", itemId);
         return itemsDao.selectOne(queryWrapper);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS, rollbackFor = Exception.class)
+    public List<SearchItemsVo> searchItems(IPage<SearchItemsVo> page, String keywords, String sort) {
+        return itemsDao.searchItems(page, keywords, sort);
     }
 }

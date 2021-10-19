@@ -1,5 +1,5 @@
 <template>
-  <div class="lo">
+  <div class="login_Content">
     <el-alert :title="infos.title" type="success" />
     <el-input
       v-model="inputValue"
@@ -33,7 +33,7 @@ export default defineComponent({
         completed: false,
       };
     };
-    const addItems = (item: TodoNode): any => {
+    const addItems = (item: TodoNode): void => {
       items.value.push(item);
     };
     return {

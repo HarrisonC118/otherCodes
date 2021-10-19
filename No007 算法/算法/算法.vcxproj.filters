@@ -66,5 +66,8 @@
     <ClCompile Include="棋盘覆盖.c">
       <Filter>源文件\归并与排序</Filter>
     </ClCompile>
+    <ClCompile Include="标准数独问题.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

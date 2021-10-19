@@ -8,5 +8,5 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class BaseController {
-    protected static final String COMMENT_PAGE_SIZE = "10";
+    protected static final int COMMENT_PAGE_SIZE = 10;
 }

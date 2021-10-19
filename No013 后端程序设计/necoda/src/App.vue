@@ -6,13 +6,13 @@
 
 <script lang="ts">
 import { reactive } from "vue";
-import Login from "./views/login/index.vue";
+import Login from "./views/login/login.vue";
 import { TeleObj } from "./typings/login";
 export default {
   components: {
     Login,
   },
-  setup() {
+  setup(): unknown {
     const backgrounds: TeleObj = reactive({
       title: "哈哈哈",
       color: "red",

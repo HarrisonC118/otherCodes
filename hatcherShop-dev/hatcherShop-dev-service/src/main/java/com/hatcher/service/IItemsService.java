@@ -1,10 +1,12 @@
 package com.hatcher.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.hatcher.entity.Items;
 import com.hatcher.entity.ItemsImg;
 import com.hatcher.entity.ItemsParam;
 import com.hatcher.entity.ItemsSpec;
+import com.hatcher.vo.SearchItemsVo;
 
 import java.util.List;
 
@@ -48,4 +50,14 @@ public interface IItemsService extends IService<Items> {
      * @return
      */
     public ItemsParam queryItemParam(String itemId);
+
+    /**
+     * 搜索商品
+     *
+     * @param page     分页信息
+     * @param keywords 关键字
+     * @param sort     根据啥排序
+     * @return
+     */
+    List<SearchItemsVo> searchItems(IPage<SearchItemsVo> page, String keywords, String sort);
 }

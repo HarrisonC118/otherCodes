@@ -8,6 +8,7 @@ import com.hatcher.entity.ItemsComments;
 import com.hatcher.enums.ItemCommentLevel;
 import com.hatcher.mapper.ItemsCommentsMapper;
 import com.hatcher.service.IItemsCommentsService;
+import com.hatcher.utils.DesensitizationUtil;
 import com.hatcher.vo.CommentLevelCountsVo;
 import com.hatcher.vo.ItemCommentsVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,6 +51,10 @@ public class ItemsCommentsServiceImpl extends ServiceImpl<ItemsCommentsMapper, I
     public List<ItemCommentsVo> queryItemComments(Integer pageNum, Integer pageSize, Integer level, String itemId) {
         IPage<ItemCommentsVo> page = new Page<>(pageNum, pageSize);
         List<ItemCommentsVo> itemCommentsVos = itemsCommentsDao.queryCommentsByItemIdAndLevel(page, itemId, level);
+        // 匿名的昵称脱敏
+        for (ItemCommentsVo vo : itemCommentsVos) {
+            vo.setNickname(DesensitizationUtil.commonDisplay(vo.getNickname()));
+        }
         return itemCommentsVos;
     }
 

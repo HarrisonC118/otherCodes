@@ -1,21 +1,23 @@
 package com.hatcher.api;
 
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hatcher.entity.Items;
 import com.hatcher.entity.ItemsImg;
 import com.hatcher.entity.ItemsParam;
 import com.hatcher.entity.ItemsSpec;
+import com.hatcher.finals.BaseController;
 import com.hatcher.service.IItemsService;
 import com.hatcher.utils.JsonResult;
 import com.hatcher.vo.ItemInfoVo;
+import com.hatcher.vo.SearchItemsVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -30,7 +32,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/items")
 @Api(value = "商品接口", tags = "商品信息展示的相关接口")
-public class ItemsController {
+public class ItemsController extends BaseController {
     @Autowired
     private IItemsService iItemsService;
 
@@ -52,5 +54,35 @@ public class ItemsController {
         itemInfoVo.setItemsParam(itemsParam);
         itemInfoVo.setItemsSpecList(itemsSpecs);
         return JsonResult.ok(itemInfoVo);
+    }
+
+    @GetMapping("/searchItems")
+    @ApiOperation(value = "查询指定关键字商品", notes = "除了关键字，还可以指定排序的标准")
+    public JsonResult searchItems(
+            @ApiParam(value = "关键字", name = "keywords", required = true)
+            @RequestParam("keywords") String keywords,
+            @ApiParam(value = "排序标志", name = "sort", allowableValues = "k,c,p")
+            @RequestParam("sort") String sort,
+            @RequestParam("pageNum")
+            @ApiParam(name = "pageNum", value = "当前是第几页")
+                    Integer pageNum,
+            @RequestParam("pageSize")
+            @ApiParam(name = "pageSize", value = "一页显示多少条评论")
+                    Integer pageSize) {
+        if (pageNum == null) {
+            pageNum = 1;
+        }
+        if (pageSize == null) {
+            pageSize = COMMENT_PAGE_SIZE;
+        }
+        if (StringUtils.isBlank(sort)) {
+            sort = "c";
+        }
+        if (StringUtils.isBlank(keywords)) {
+            return JsonResult.errorMsg("请求错误！");
+        }
+        IPage<SearchItemsVo> page = new Page<>(pageNum, pageSize);
+        List<SearchItemsVo> searchItemsVos = iItemsService.searchItems(page, keywords, sort);
+        return JsonResult.ok(searchItemsVos);
     }
 }

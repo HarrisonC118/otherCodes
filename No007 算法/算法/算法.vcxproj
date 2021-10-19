@@ -30,6 +30,7 @@
     <ClCompile Include="出售金鱼.c" />
     <ClCompile Include="发奖牌问题.c" />
     <ClCompile Include="小华读书.c" />
+    <ClCompile Include="标准数独问题.c" />
     <ClCompile Include="棋盘覆盖.c" />
     <ClCompile Include="猴子摘桃.c" />
     <ClCompile Include="走台阶问题.c" />
