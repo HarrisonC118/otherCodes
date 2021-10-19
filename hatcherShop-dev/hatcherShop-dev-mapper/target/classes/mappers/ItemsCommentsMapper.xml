@@ -4,16 +4,36 @@
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.hatcher.entity.ItemsComments">
-        <id column="id" property="id" />
-        <result column="user_id" property="userId" />
-        <result column="item_id" property="itemId" />
-        <result column="item_name" property="itemName" />
-        <result column="item_spec_id" property="itemSpecId" />
-        <result column="sepc_name" property="sepcName" />
-        <result column="comment_level" property="commentLevel" />
-        <result column="content" property="content" />
-        <result column="created_time" property="createdTime" />
-        <result column="updated_time" property="updatedTime" />
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="item_id" property="itemId"/>
+        <result column="item_name" property="itemName"/>
+        <result column="item_spec_id" property="itemSpecId"/>
+        <result column="sepc_name" property="sepcName"/>
+        <result column="comment_level" property="commentLevel"/>
+        <result column="content" property="content"/>
+        <result column="created_time" property="createdTime"/>
+        <result column="updated_time" property="updatedTime"/>
     </resultMap>
+    <resultMap id="ItemCommentsVo" type="com.hatcher.vo.ItemCommentsVo">
+        <result column="commentLevel" property="commentLevel"/>
+        <result column="content" property="content"/>
+        <result column="specName" property="specName"/>
+        <result column="nickname" property="nickname"/>
+        <result column="userFace" property="userFace"/>
+        <result column="createdTime" property="createdTime"/>
+    </resultMap>
+    <select id="queryCommentsByItemIdAndLevel" resultMap="ItemCommentsVo">
+        SELECT ic.comment_level as commentLevel,
+               ic.content       as content,
+               ic.sepc_name     as specName,
+               ic.created_time  as createdTime,
+               u.face           as userFace,
+               u.nickname       as nickname
+        FROM items_comments ic
+                 LEFT JOIN users u ON ic.user_id = u.id
+        WHERE ic.item_id = #{itemId}
+          AND ic.comment_level = #{level}
+    </select>
 
 </mapper>

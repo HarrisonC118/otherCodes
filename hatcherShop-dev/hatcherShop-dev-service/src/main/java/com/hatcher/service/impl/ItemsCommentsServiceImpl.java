@@ -1,16 +1,21 @@
 package com.hatcher.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hatcher.entity.ItemsComments;
 import com.hatcher.enums.ItemCommentLevel;
 import com.hatcher.mapper.ItemsCommentsMapper;
 import com.hatcher.service.IItemsCommentsService;
 import com.hatcher.vo.CommentLevelCountsVo;
+import com.hatcher.vo.ItemCommentsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * <p>
@@ -40,6 +45,15 @@ public class ItemsCommentsServiceImpl extends ServiceImpl<ItemsCommentsMapper, I
         return commentLevelCountsVo;
     }
 
+    @Transactional(propagation = Propagation.SUPPORTS, rollbackFor = Exception.class)
+    @Override
+    public List<ItemCommentsVo> queryItemComments(Integer pageNum, Integer pageSize, Integer level, String itemId) {
+        IPage<ItemCommentsVo> page = new Page<>(pageNum, pageSize);
+        List<ItemCommentsVo> itemCommentsVos = itemsCommentsDao.queryCommentsByItemIdAndLevel(page, itemId, level);
+        return itemCommentsVos;
+    }
+
+
     /**
      * 根据id和level等级查询记录的数量
      *
@@ -48,7 +62,7 @@ public class ItemsCommentsServiceImpl extends ServiceImpl<ItemsCommentsMapper, I
      * @return
      */
     @Transactional(propagation = Propagation.SUPPORTS, rollbackFor = Exception.class)
-    private int getCommentCounts(String itemId, Integer level) {
+    protected int getCommentCounts(String itemId, Integer level) {
         QueryWrapper<ItemsComments> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("item_id", itemId);
         queryWrapper.eq("comment_level", level);
