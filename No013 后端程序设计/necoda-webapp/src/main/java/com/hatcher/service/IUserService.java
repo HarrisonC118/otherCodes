@@ -12,5 +12,18 @@ import com.hatcher.entity.User;
  * @since 2021-10-08
  */
 public interface IUserService extends IService<User> {
+    /**
+     * 用户登录
+     * @param username 用户名
+     * @param password 密码
+     * @return
+     */
+    User login(String username, String password);
 
+    /**
+     * 用户注册
+     * @param username 用户名
+     * @param password 密码
+     */
+    int register(String username, String password);
 }

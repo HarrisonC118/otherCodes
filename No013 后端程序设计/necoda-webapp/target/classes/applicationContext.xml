@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:jdbc.properties"/>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="classpath:mappers"></property>
+        <property name="basePackage" value="com.hatcher.dao"/>
     </bean>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <!-- 指定连接数据库的驱动-->
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <!-- 指定连接数据库的URL-->
+        <property name="url" value="${jdbc.url}"/>
+        <!-- 指定连接数据库的用户名-->
+        <property name="username" value="${jdbc.username}"/>
+        <!-- 指定连接数据库的密码-->
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <bean id="sqlSessionFactory" class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:mappers/*.xml"/>
+        <property name="globalConfig" ref="globalConfig"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"></property>
+    </bean>
+    <bean id="globalConfig" class="com.baomidou.mybatisplus.core.config.GlobalConfig">
+        <property name="metaObjectHandler">
+            <bean class="com.hatcher.config.MyMetaObjectHandler"/>
+        </property>
+    </bean>
+    <context:component-scan base-package="com.hatcher"/>
 </beans>

@@ -1,9 +1,9 @@
 package com.hatcher.entity;
 
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 
 /**
  * <p>
@@ -11,30 +11,28 @@ import io.swagger.annotations.ApiModelProperty;
  * </p>
  *
  * @author HatcherCheung
- * @since 2021-10-08
+ * @since 2021-10-25
  */
-@ApiModel(value = "User对象", description = "")
-public class User implements Serializable {
+
+@TableName("ne_group")
+public class Group implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
-    @ApiModelProperty("用户id值")
+    @TableId(type = IdType.ASSIGN_UUID)
     private String id;
 
-    @ApiModelProperty("创建时间")
-    private LocalDateTime gmtCreate;
+    private String userId;
 
-    @ApiModelProperty("更新时间")
+    private String groupName;
+
+    private String groupContent;
+    @TableField(fill = FieldFill.INSERT)
+    private LocalDateTime gmtCreate;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime gmtModified;
 
-    @ApiModelProperty("逻辑删除")
+    @TableLogic()
     private Integer isDeleted;
-
-    @ApiModelProperty("用户名")
-    private String username;
-
-    @ApiModelProperty("密码")
-    private String password;
 
     public String getId() {
         return id;
@@ -42,6 +40,27 @@ public class User implements Serializable {
 
     public void setId(String id) {
         this.id = id;
+    }
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
+    public String getGroupContent() {
+        return groupContent;
+    }
+
+    public void setGroupContent(String groupContent) {
+        this.groupContent = groupContent;
     }
     public LocalDateTime getGmtCreate() {
         return gmtCreate;
@@ -64,30 +83,17 @@ public class User implements Serializable {
     public void setIsDeleted(Integer isDeleted) {
         this.isDeleted = isDeleted;
     }
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Group{" +
             "id=" + id +
+            ", userId=" + userId +
+            ", groupName=" + groupName +
+            ", groupContent=" + groupContent +
             ", gmtCreate=" + gmtCreate +
             ", gmtModified=" + gmtModified +
             ", isDeleted=" + isDeleted +
-            ", username=" + username +
-            ", password=" + password +
         "}";
     }
 }

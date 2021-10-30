@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
  * @author: HatcherCheung
  * Date:  2021/10/8
  */
-@Component
 public class MyMetaObjectHandler implements MetaObjectHandler {
 
     /**
@@ -18,10 +17,8 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
      */
     @Override
     public void insertFill(MetaObject metaObject) {
-        if (metaObject.hasGetter("gmtCreate") && metaObject.hasGetter("gmtModified")) {
-            setFieldValByName("gmtCreate", System.currentTimeMillis(), metaObject);
-            setFieldValByName("gmtModified", System.currentTimeMillis(), metaObject);
-        }
+        this.strictInsertFill(metaObject, "gmtCreate", LocalDateTime.class, LocalDateTime.now());
+        this.strictInsertFill(metaObject, "gmtModified", LocalDateTime.class, LocalDateTime.now());
     }
 
     /**
@@ -29,9 +26,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
      */
     @Override
     public void updateFill(MetaObject metaObject) {
-        if (metaObject.hasGetter("et.gmtModified")) {
-            setFieldValByName("gmtModified",System.currentTimeMillis(), metaObject);
-        }
+        this.strictUpdateFill(metaObject, "gmtModified", LocalDateTime.class, LocalDateTime.now());
     }
 
 }

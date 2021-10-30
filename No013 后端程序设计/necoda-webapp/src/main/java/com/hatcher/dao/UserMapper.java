@@ -2,6 +2,7 @@ package com.hatcher.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hatcher.entity.User;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>

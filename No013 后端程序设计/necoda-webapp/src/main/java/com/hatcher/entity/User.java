@@ -1,9 +1,8 @@
 package com.hatcher.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -16,18 +15,22 @@ import java.time.LocalDateTime;
  * @author HatcherCheung
  * @since 2021-10-08
  */
+@Component
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @TableId(type = IdType.ASSIGN_UUID)
     private String id;
-    @TableField(value = "gmt_create", fill = FieldFill.INSERT)
+    @TableField(fill = FieldFill.INSERT)
     private LocalDateTime gmtCreate;
-    @TableField(value = "gmt_modified", fill = FieldFill.INSERT_UPDATE)
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime gmtModified;
+    @TableLogic(delval="1",value = "0")
     private Integer isDeleted;
     private String username;
     private String password;
+
+
     public String getId() {
         return id;
     }
