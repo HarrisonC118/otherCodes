@@ -87,6 +87,8 @@ public class UsersController {
         // 设置cookie
         CookieUtils.setCookie(request, response, "userInfo", JsonUtils.objectToJson(user), true);
         looger.info("======用户：" + user.getUsername() + "注册成功======");
+        // TODO 生成用户的token,存入redis缓存
+        // TODO 同步购物车数据
         return JsonResult.ok("注册成功！");
     }
 
@@ -123,6 +125,9 @@ public class UsersController {
         // 设置cookie
         CookieUtils.setCookie(request, response, "userInfo", JsonUtils.objectToJson(user), true);
         looger.info("======用户：" + user.getUsername() + "登录成功======");
+
+        // TODO 生成用户的token,存入redis缓存
+        // TODO 同步购物车数据
         return JsonResult.ok(user);
     }
 

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.hatcher.entity.Items;
 import com.hatcher.vo.SearchItemsVo;
+import com.hatcher.vo.ShopCartVo;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -26,4 +27,12 @@ public interface ItemsMapper extends BaseMapper<Items> {
      * @return
      */
     List<SearchItemsVo> searchItems(IPage<SearchItemsVo> page, @Param("keywords") String keywords, @Param("sort") String sort);
+
+    /**
+     * 通过商品的规格id获取多个商品的信息
+     *
+     * @param specIds 多个商品规格
+     * @return
+     */
+    List<ShopCartVo> queryItemsBySpecIds(@Param("paramsList") List specIds);
 }

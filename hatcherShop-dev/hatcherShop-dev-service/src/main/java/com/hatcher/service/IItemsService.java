@@ -7,6 +7,7 @@ import com.hatcher.entity.ItemsImg;
 import com.hatcher.entity.ItemsParam;
 import com.hatcher.entity.ItemsSpec;
 import com.hatcher.vo.SearchItemsVo;
+import com.hatcher.vo.ShopCartVo;
 
 import java.util.List;
 
@@ -60,4 +61,13 @@ public interface IItemsService extends IService<Items> {
      * @return
      */
     List<SearchItemsVo> searchItems(IPage<SearchItemsVo> page, String keywords, String sort);
+
+    /**
+     * 根据规格id查询最新购物车中商品的数据(用于刷新渲染购物车中的商品数据)
+     *
+     * @param specIds 字符串形式的多个规格id
+     * @return
+     */
+    List<ShopCartVo> queryItemsBySpecIds(String specIds);
+
 }

@@ -13,11 +13,14 @@ import com.hatcher.mapper.ItemsParamMapper;
 import com.hatcher.mapper.ItemsSpecMapper;
 import com.hatcher.service.IItemsService;
 import com.hatcher.vo.SearchItemsVo;
+import com.hatcher.vo.ShopCartVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -75,5 +78,15 @@ public class ItemsServiceImpl extends ServiceImpl<ItemsMapper, Items> implements
     @Transactional(propagation = Propagation.SUPPORTS, rollbackFor = Exception.class)
     public List<SearchItemsVo> searchItems(IPage<SearchItemsVo> page, String keywords, String sort) {
         return itemsDao.searchItems(page, keywords, sort);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS, rollbackFor = Exception.class)
+    public List<ShopCartVo> queryItemsBySpecIds(String specIds) {
+        String[] ids = specIds.split(",");
+        List<String> specIdsList = new ArrayList<>();
+        // 使用Collections的工具类，把String[]中的所有数据添加到List中
+        Collections.addAll(specIdsList, ids);
+        return itemsDao.queryItemsBySpecIds(specIdsList);
     }
 }
