@@ -5,103 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b59c815-4f7a-43d8-8064-360ec08f1997" name="更改" comment="MyBaits-Plus代码生成器">
-      <change afterPath="$PROJECT_DIR$/../No011 spring/src/main/java/com/hatcher/aop/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../No011 spring/src/main/java/com/hatcher/aop/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../No011 spring/src/main/java/com/hatcher/aop/UserServiceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/CarouselController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/ItemsCommentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/ItemsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/ItemsImgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/ItemsParamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/ItemsSpecController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/OrderItemsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/OrderStatusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/OrdersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/UserAddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/Carousel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/ItemsComments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/ItemsImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/ItemsParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/ItemsSpec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/OrderItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/UserAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/entity/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/ICarouselService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/ICategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IItemsCommentsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IItemsImgService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IItemsParamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IItemsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IItemsSpecService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IOrderItemsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IOrderStatusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IOrdersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IUserAddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/IUsersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/CarouselServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/ItemsCommentsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/ItemsImgServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/ItemsParamServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/ItemsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/ItemsSpecServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/OrderItemsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/OrderStatusServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/OrdersServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/UserAddressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/src/main/java/com/hatcher/service/impl/UsersServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/.idea/No013 后端程序设计.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/controller/UserLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/controller/UserRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/filter/CharsetFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/utils/JsonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/controller/UserLogin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/controller/UserRegister.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/filter/CharsetFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/utils/JsonResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/config/MyMetaObjectHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/controller/UserLogin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/controller/UserRegister.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/filter/CharsetFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/service/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/utils/JsonResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/lib/fastjson-1.2.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/lib/jackson-core-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/lib/jackson-databind-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/ShopcartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/bo/ShopcartBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/.vs/算法/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/.vs/算法/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/.vs/算法/v16/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/.vs/算法/v16/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/vc142.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/vc142.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/vc142.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/vc142.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.log" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/Debug/算法.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/算法.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/算法.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No007 算法/算法/算法.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../No007 算法/算法/算法.vcxproj.filters" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyAutoGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyAutoGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/service/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/mappers/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MyAutoGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyAutoGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/TestApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/CarouselMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/CarouselMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsCommentsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsCommentsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsImgMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsImgMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsParamMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsParamMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsSpecMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/ItemsSpecMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrderItemsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrderItemsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrderStatusMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrderStatusMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrdersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/OrdersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/UserAddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/UserAddressMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/mapper/UsersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/java/com/hatcher/my/mapper/MyMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/CarouselMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsCommentsMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsImgMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsParamMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/ItemsSpecMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/OrderItemsMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/OrderStatusMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/OrdersMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/UserAddressMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-mapper/src/main/resources/mapper/UsersMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Carousel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Items.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsComments.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsImg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/ItemsSpec.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/OrderItems.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/OrderStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Orders.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/UserAddress.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/pojo/Users.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/config/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/config/MyMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/dao/GroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/dao/GroupMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/dao/ImgMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/dao/ImgMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/java/com/hatcher/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/config/MyMetaObjectHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/config/MyMetaObjectHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/classes/com/hatcher/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../No013 后端程序设计/necoda-webapp/target/nacoda-webapp-1.0/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/target/classes/com/hatcher/api/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hatcherShop-dev/hatcherShop-dev-api/target/classes/com/hatcher/api/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../后端开发-作业/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../后端开发-作业/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +152,7 @@
       <workItem from="1633335194551" duration="2754000" />
       <workItem from="1633393257629" duration="219000" />
       <workItem from="1633393819584" duration="1064000" />
+      <workItem from="1635174943828" duration="220000" />
     </task>
     <task id="LOCAL-00001" summary="MyBaits-Plus代码生成器">
       <created>1633337930359</created>

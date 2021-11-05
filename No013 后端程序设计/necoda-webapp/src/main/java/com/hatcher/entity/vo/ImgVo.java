@@ -1,5 +1,7 @@
 package com.hatcher.entity.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
 
 /**
@@ -10,6 +12,7 @@ public class ImgVo {
     private String imgId;
     private String imgMasterName;
     private String imgUrl;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private LocalDateTime imgCreateTime;
 
     public String getImgId() {

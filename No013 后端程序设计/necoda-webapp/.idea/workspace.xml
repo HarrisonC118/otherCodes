@@ -19,55 +19,24 @@
       <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/runConfigurations.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/necoda-webapp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/AddGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/AddImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/DisplayImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/QueryImgsById.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/UserLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/UserRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/vo/GroupVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/vo/ImgDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/vo/ImgVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/filter/CharsetFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/filter/CorsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/service/IGroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/service/IImgService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/service/impl/GroupServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/service/impl/ImgServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/utils/JsonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rebel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/QQ截图20210816164538.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/wallhaven-1kryww.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/wallhaven-72rxqo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/wallhaven-pkw6y3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/wallhaven-pky1w3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hatcher/controller/UserLogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hatcher/controller/UserRegister.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hatcher/filter/CharsetFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/hatcher/utils/JsonResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/config/MyMetaObjectHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/controller/UserLogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/controller/UserRegister.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/dao/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/filter/CharsetFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/service/IUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/utils/JsonResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/lib/fastjson-1.2.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/lib/jackson-core-2.9.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/lib/jackson-databind-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-api/src/main/java/com/hatcher/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-api/src/test/java/com/hatcher/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-mapper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-mapper/src/main/java/com/hatcher/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-mapper/src/test/java/com/hatcher/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-pojo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-pojo/src/main/java/com/hatcher/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-pojo/src/test/java/com/hatcher/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-service/src/main/java/com/hatcher/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-service/src/test/java/com/hatcher/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imgGo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/filter/JsonFilter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../No014 SpringMVC/No014 SpringMVC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/ShopcartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/src/main/java/com/hatcher/bo/ShopcartBo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/Browse.VC.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/vc142.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/vc142.idb" afterDir="false" />
@@ -92,38 +61,18 @@
       <change beforePath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/src/main/java/MyAutoGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/src/main/java/MyAutoGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/src/main/java/com/hatcher/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/src/main/java/com/hatcher/controller/ImgController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/src/main/java/com/hatcher/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/Img.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/src/main/java/com/hatcher/mapper/UserMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/src/main/java/com/hatcher/service/IUserService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/src/main/java/com/hatcher/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/mappers/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/target/classes/MyAutoGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../No012 MybatisPlus代码生成器/target/classes/MyAutoGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../No014 SpringMVC/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../No014 SpringMVC/src/main/webapp/WEB-INF/log4j.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../No014 SpringMVC/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/config/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/config/MyMetaObjectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hatcher/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hatcher/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hatcher/config/MyMetaObjectHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hatcher/config/MyMetaObjectHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hatcher/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hatcher/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hatcher/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hatcher/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hatcher/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hatcher/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hatcher/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/vo/GroupVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/vo/GroupVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/vo/ImgVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/vo/ImgVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/nacoda-webapp-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../necoda/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../necoda/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../necoda/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../necoda/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../necoda/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../necoda/src/router/index.ts" afterDir="false" />
@@ -132,8 +81,9 @@
       <change beforePath="$PROJECT_DIR$/../../No014 SpringMVC/src/main/java/com/hatcher/D1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../No014 SpringMVC/src/main/java/com/hatcher/D1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No014 SpringMVC/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../No014 SpringMVC/src/main/resources/springMVC.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../No014 SpringMVC/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../No014 SpringMVC/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/target/classes/com/hatcher/api/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/target/classes/com/hatcher/api/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/ShopcartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/api/ShopcartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/target/classes/com/hatcher/mapper/ItemsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/target/classes/com/hatcher/mapper/ItemsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-service/target/classes/com/hatcher/service/IItemsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-service/target/classes/com/hatcher/service/IItemsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../后端开发-作业/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../后端开发-作业/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -384,8 +334,20 @@
       <workItem from="1635421631764" duration="10436000" />
       <workItem from="1635465148007" duration="2336000" />
       <workItem from="1635468772673" duration="2737000" />
-      <workItem from="1635600692029" duration="721000" />
+      <workItem from="1635600692029" duration="1382000" />
+      <workItem from="1635775856307" duration="2057000" />
+      <workItem from="1635812403879" duration="70000" />
+      <workItem from="1635812614379" duration="3183000" />
+      <workItem from="1635946437576" duration="597000" />
     </task>
+    <task id="LOCAL-00001" summary="照片的存储和展示">
+      <created>1635604234624</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635604234624</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

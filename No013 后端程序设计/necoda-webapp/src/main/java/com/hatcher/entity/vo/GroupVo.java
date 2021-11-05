@@ -1,5 +1,7 @@
 package com.hatcher.entity.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -10,6 +12,7 @@ import java.util.List;
 public class GroupVo {
     private String groupName;
     private String groupContent;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private LocalDateTime groupCreateTime;
     private List<ImgVo> imgList;
 
@@ -29,6 +32,7 @@ public class GroupVo {
         this.groupContent = groupContent;
     }
 
+
     public LocalDateTime getGroupCreateTime() {
         return groupCreateTime;
     }
@@ -44,7 +48,6 @@ public class GroupVo {
     public void setImgList(List<ImgVo> imgList) {
         this.imgList = imgList;
     }
-
     @Override
     public String toString() {
         return "GroupVo{" +

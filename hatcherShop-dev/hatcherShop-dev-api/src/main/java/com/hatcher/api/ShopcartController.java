@@ -54,4 +54,22 @@ public class ShopcartController {
         List<ShopCartVo> shopCartVos = iItemsService.queryItemsBySpecIds(itemSpecIds);
         return JsonResult.ok(shopCartVos);
     }
+
+    @PostMapping("del")
+    @ApiOperation(value = "通过规格Id删除对应的购物车内商品", notes = "通过规格Id删除对应的购物车内商品")
+    public JsonResult delCartItem(
+            @ApiParam(value = "商品规格的id", required = true)
+            @RequestParam("itemSpecId")
+                    String itemSpecId,
+            @ApiParam(value = "用户id", required = true)
+            @RequestParam("userId")
+                    String userId
+    ) {
+        if (StringUtils.isBlank(itemSpecId) || StringUtils.isBlank(userId)) {
+            return JsonResult.ok("");
+        }
+
+        // TODO 如果用户已经登录，需要在后端删除购物车中对应的商品
+        return JsonResult.ok();
+    }
 }

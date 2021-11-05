@@ -69,5 +69,32 @@
     <ClCompile Include="标准数独问题.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="n皇后.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="零一背包问题.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="四城市旅行商问题.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="动态规划test.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="最长公共子序列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="零一背包_动态规划.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="矩阵连乘_动态规划.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="源.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="零一背包_分支限界.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

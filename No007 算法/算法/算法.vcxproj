@@ -20,9 +20,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A星算法.cpp" />
+    <ClCompile Include="n皇后.c" />
     <ClCompile Include="传染病问题.c" />
     <ClCompile Include="分橘子问题.c" />
+    <ClCompile Include="动态规划test.c" />
+    <ClCompile Include="源.cpp" />
+    <ClCompile Include="矩阵连乘_动态规划.cpp" />
+    <ClCompile Include="零一背包_分支限界.cpp" />
+    <ClCompile Include="零一背包_动态规划.cpp" />
     <ClCompile Include="合并排序.c" />
+    <ClCompile Include="四城市旅行商问题.c" />
     <ClCompile Include="国王分财产.c" />
     <ClCompile Include="快速排序.c" />
     <ClCompile Include="Main.cpp" />
@@ -30,11 +37,13 @@
     <ClCompile Include="出售金鱼.c" />
     <ClCompile Include="发奖牌问题.c" />
     <ClCompile Include="小华读书.c" />
+    <ClCompile Include="最长公共子序列.cpp" />
     <ClCompile Include="标准数独问题.c" />
     <ClCompile Include="棋盘覆盖.c" />
     <ClCompile Include="猴子摘桃.c" />
     <ClCompile Include="走台阶问题.c" />
     <ClCompile Include="递归倒序输出.c" />
+    <ClCompile Include="零一背包问题.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

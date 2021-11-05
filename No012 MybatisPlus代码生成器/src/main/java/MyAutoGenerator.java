@@ -10,7 +10,7 @@ import java.util.Collections;
  */
 public class MyAutoGenerator {
     public static void main(String[] args) {
-        FastAutoGenerator.create("jdbc:mysql://localhost:3306/hatcher_shop?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false", "root", "root")
+        FastAutoGenerator.create("jdbc:mysql://localhost:3306/necoda?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false", "root", "root")
                 .globalConfig(builder -> {
                     builder.author("HatcherCheung") // 设置作者
                             .enableSwagger() // 开启 swagger 模式
@@ -23,8 +23,7 @@ public class MyAutoGenerator {
                             .pathInfo(Collections.singletonMap(OutputFile.mapperXml, "./src/main/resources/mappers")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("carousel","category","users","user_address","items","items_img",
-                                    "items_spec","items_param","items_comments","orders","order_items","order_status") // 设置需要生成的表名
+                    builder.addInclude("img","group") // 设置需要生成的表名
                             .mapperBuilder()
                             .enableBaseResultMap();
                 })
