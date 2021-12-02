@@ -10,8 +10,8 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -26,9 +26,11 @@ public class UserController {
 
 	@ApiOperation(value = "用户注册")
 	@PostMapping("/register")
-	public JsonResult userRegister(@ApiParam("用户对象，有用户名和密码") @RequestBody UserRegisterBo user) {
-
-		int register = userService.register(user.getUsername(), user.getPassword());
+	// public JsonResult userRegister(@ApiParam("用户对象，有用户名和密码") @RequestBody UserRegisterBo user) {
+	public JsonResult userRegister(@ApiParam("用户名") @RequestParam String username,
+	                               @ApiParam("密码") @RequestParam String password) {
+		UserRegisterBo userRegisterBo = new UserRegisterBo(username, password);
+		int register = userService.register(userRegisterBo);
 		if (register != 1) {
 			return JsonResult.errorMsg("用户创建失败，请重试！");
 		}
@@ -37,8 +39,11 @@ public class UserController {
 
 	@PostMapping("/login")
 	@ApiOperation(value = "用户登录")
-	public JsonResult userLogin(@ApiParam("用户对象，有用户名和密码") @RequestBody UserLoginBo user) {
-		User login = userService.login(user);
+	// public JsonResult userLogin(@ApiParam("用户对象，有用户名和密码") @RequestBody UserLoginBo user) {
+	public JsonResult userLogin(@ApiParam("用户名") @RequestParam String username,
+	                            @ApiParam("密码") @RequestParam String password) {
+		UserLoginBo userLoginBo = new UserLoginBo(username, password);
+		User login = userService.login(userLoginBo);
 		if (login == null) {
 			return JsonResult.errorMsg("用户名或密码错误！");
 		}

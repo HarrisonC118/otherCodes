@@ -10,34 +10,40 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(value = "添加分组的对象")
 public class AddGroupBo {
-    @ApiModelProperty("用户Id")
-    private String userId;
-    @ApiModelProperty("分组名")
-    private String groupName;
-    @ApiModelProperty("跟组介绍")
-    private String groupContent;
+	@ApiModelProperty("用户Id")
+	private String userId;
+	@ApiModelProperty("分组名")
+	private String groupName;
+	@ApiModelProperty("分组介绍")
+	private String groupContent;
 
-    public String getUserId() {
-        return userId;
-    }
+	public AddGroupBo(String userId, String groupName, String groupContent) {
+		this.userId = userId;
+		this.groupName = groupName;
+		this.groupContent = groupContent;
+	}
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+	public String getUserId() {
+		return userId;
+	}
 
-    public String getGroupName() {
-        return groupName;
-    }
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 
-    public void setGroupName(String groupName) {
-        this.groupName = groupName;
-    }
+	public String getGroupName() {
+		return groupName;
+	}
 
-    public String getGroupContent() {
-        return groupContent;
-    }
+	public void setGroupName(String groupName) {
+		this.groupName = groupName;
+	}
 
-    public void setGroupContent(String groupContent) {
-        this.groupContent = groupContent;
-    }
+	public String getGroupContent() {
+		return groupContent;
+	}
+
+	public void setGroupContent(String groupContent) {
+		this.groupContent = groupContent;
+	}
 }

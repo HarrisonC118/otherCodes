@@ -1,9 +1,7 @@
 package com.hatcher.controller;
 
 import com.hatcher.entity.Group;
-import com.hatcher.entity.User;
 import com.hatcher.service.impl.GroupServiceImpl;
-import com.hatcher.service.impl.UserServiceImpl;
 import com.hatcher.utils.JsonResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.context.WebApplicationContext;

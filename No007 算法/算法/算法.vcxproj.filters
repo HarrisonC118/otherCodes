@@ -96,5 +96,14 @@
     <ClCompile Include="零一背包_分支限界.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="TSP旅行者问题_分支限界.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="找零钱_贪心.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="最大子段和_贪心.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

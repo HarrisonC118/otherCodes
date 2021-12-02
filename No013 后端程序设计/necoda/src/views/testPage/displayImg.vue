@@ -14,7 +14,29 @@
           {{ item.groupContent }}
         </el-descriptions-item>
         <el-descriptions-item label="分组创建时间">
-          {{ item.strCreateTime }}
+          <!-- { "year": 2021, "month": "NOVEMBER", "dayOfMonth": 12, "dayOfWeek": "FRIDAY", 
+            "dayOfYear": 316, "monthValue": 11, "hour": 9, "minute": 4, "second": 22, "nano": 0, 
+            "chronology": { "id": "ISO", "calendarType": "iso8601" } } -->
+          {{ item.groupCreateTime.year }}年{{
+            item.groupCreateTime.monthValue
+          }}月{{ item.groupCreateTime.dayOfMonth }}日
+          {{ item.groupCreateTime.hour }}:{{ item.groupCreateTime.minute }}:{{
+            item.groupCreateTime.second
+          }}
+        </el-descriptions-item>
+        <el-descriptions-item label="分组照片">
+          <div class="imgContainer">
+            <div class="myImg" v-for="item in item.imgList" :key="item.imgId">
+              <el-image
+                style="width: 300px; height: 300px"
+                :src="
+                  'http://localhost:8080/necoda_webapp_war/displayImg?imgUrl=' +
+                  item.imgUrl
+                "
+                fit="contain"
+              ></el-image>
+            </div>
+          </div>
         </el-descriptions-item>
       </el-descriptions>
     </div>
@@ -53,7 +75,7 @@ export default defineComponent({
     function test(): void {
       axios({
         method: "get",
-        url: "http://localhost:8080/necoda_webapp_war/queryImgsById?userId=21f6cc61f14d92fbc328592c0134276a",
+        url: "http://localhost:8080/necoda_webapp_war/queryImgsById?userId=349ddf58bfd19e78293b2acd7c70a2ae",
       }).then((res) => {
         info.userName = res.data[0][0].userName;
         info.groupList = res.data[0][0].groupList;
@@ -72,9 +94,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .displayImg {
-  height: 500px;
+  height: 1000px;
 }
 img {
   width: 800px;
+}
+.imgContainer {
+  display: flex;
 }
 </style>

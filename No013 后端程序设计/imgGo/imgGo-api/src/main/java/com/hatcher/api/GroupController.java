@@ -31,7 +31,6 @@ public class GroupController {
 			@ApiParam(value = "分组对象")
 			@RequestBody
 					AddGroupBo groupBo) {
-
 		int i = groupService.addGroupInfo(groupBo);
 		if (i != 1) {
 			return JsonResult.errorMsg("添加失败！");

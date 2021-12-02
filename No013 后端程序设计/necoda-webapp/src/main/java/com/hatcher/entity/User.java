@@ -1,8 +1,6 @@
 package com.hatcher.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -15,7 +13,6 @@ import java.time.LocalDateTime;
  * @author HatcherCheung
  * @since 2021-10-08
  */
-@Component
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -21,9 +21,12 @@
   <ItemGroup>
     <ClCompile Include="A星算法.cpp" />
     <ClCompile Include="n皇后.c" />
+    <ClCompile Include="TSP旅行者问题_分支限界.cpp" />
     <ClCompile Include="传染病问题.c" />
     <ClCompile Include="分橘子问题.c" />
     <ClCompile Include="动态规划test.c" />
+    <ClCompile Include="找零钱_贪心.cpp" />
+    <ClCompile Include="最大子段和_贪心.cpp" />
     <ClCompile Include="源.cpp" />
     <ClCompile Include="矩阵连乘_动态规划.cpp" />
     <ClCompile Include="零一背包_分支限界.cpp" />
