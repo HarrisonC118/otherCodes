@@ -10,83 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="652e0597-905c-4d90-894f-d89fa9be8909" name="更改" comment="照片的存储和展示">
-      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-api/src/main/java/com/hatcher/api/ImgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../imgGo/imgGo-mapper/src/main/java/com/hatcher/dao/GroupRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/Browse.VC.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/ipch/AutoPCH/7f25705952b10264/零一背包_动态规划.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/ipch/AutoPCH/8489821ab09a87b0/零一背包_分支限界.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/.vs/算法/v16/ipch/AutoPCH/8489821ab09a87b0/零一背包_分支限界.ipch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/A星算法.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/A星算法.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/Main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/Main.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/n皇后.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/n皇后.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/vc142.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/vc142.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/vc142.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/vc142.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/上下车问题.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/上下车问题.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/传染病问题.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/传染病问题.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/出售金鱼.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/出售金鱼.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/分橘子问题.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/分橘子问题.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/动态规划test.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/动态规划test.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/发奖牌问题.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/发奖牌问题.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/合并排序.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/合并排序.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/四城市旅行商问题.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/四城市旅行商问题.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/国王分财产.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/国王分财产.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/小华读书.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/小华读书.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/快速排序.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/快速排序.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/最长公共子序列.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/最长公共子序列.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/标准数独问题.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/标准数独问题.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/棋盘覆盖.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/棋盘覆盖.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/源.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/源.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/猴子摘桃.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/猴子摘桃.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/矩阵连乘_动态规划.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/矩阵连乘_动态规划.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/link.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/link.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/算法.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/算法.tlog/算法.lastbuildstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/走台阶问题.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/走台阶问题.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/递归倒序输出.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/递归倒序输出.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/零一背包_分支限界.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/零一背包_分支限界.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/零一背包_动态规划.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/零一背包_动态规划.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/Debug/零一背包问题.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/Debug/零一背包问题.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/算法.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/算法.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/算法.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/算法.vcxproj.filters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No007 算法/算法/零一背包_分支限界.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../No007 算法/算法/零一背包_分支限界.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imgGo/imgGo-api/src/main/java/com/hatcher/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../imgGo/imgGo-api/src/main/java/com/hatcher/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imgGo/imgGo-api/src/main/java/com/hatcher/api/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../imgGo/imgGo-api/src/main/java/com/hatcher/api/GroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imgGo/imgGo-api/src/main/java/com/hatcher/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../imgGo/imgGo-api/src/main/java/com/hatcher/api/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imgGo/imgGo-pojo/src/main/java/com/hatcher/bo/AddGroupBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../imgGo/imgGo-pojo/src/main/java/com/hatcher/bo/AddGroupBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imgGo/imgGo-pojo/src/main/java/com/hatcher/bo/UserLoginBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../imgGo/imgGo-pojo/src/main/java/com/hatcher/bo/UserLoginBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imgGo/imgGo-pojo/src/main/java/com/hatcher/bo/UserRegisterBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../imgGo/imgGo-pojo/src/main/java/com/hatcher/bo/UserRegisterBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imgGo/imgGo-service/src/main/java/com/hatcher/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../imgGo/imgGo-service/src/main/java/com/hatcher/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imgGo/imgGo-service/src/main/java/com/hatcher/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../imgGo/imgGo-service/src/main/java/com/hatcher/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imgGo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../imgGo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/necoda-webapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/necoda-webapp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/AddGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/controller/AddGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hatcher/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/QQ截图20210816164538.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/屏幕截图(3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/屏幕截图(5).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nacoda-webapp-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nacoda-webapp-1.0/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/nacoda-webapp-1.0/WEB-INF/classes/com/hatcher/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../necoda/src/views/testPage/displayImg.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../necoda/src/views/testPage/displayImg.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../No015 nodejs/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../No015 nodejs/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/hatcherShop-dev-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/hatcherShop-dev-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/src/main/java/com/hatcher/TestApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/target/classes/com/hatcher/TestApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-api/target/classes/com/hatcher/TestApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-common/hatcherShop-dev-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-common/hatcherShop-dev-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/hatcherShop-dev-mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-mapper/hatcherShop-dev-mapper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/hatcherShop-dev-pojo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-pojo/hatcherShop-dev-pojo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-service/hatcherShop-dev-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hatcherShop-dev/hatcherShop-dev-service/hatcherShop-dev-service.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,6 +279,8 @@
       <workItem from="1637280307364" duration="598000" />
       <workItem from="1637630217614" duration="464000" />
       <workItem from="1638231002711" duration="630000" />
+      <workItem from="1638490029038" duration="410000" />
+      <workItem from="1638490483810" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="照片的存储和展示">
       <created>1635604234624</created>
