@@ -1,6 +1,7 @@
 package com.hatcher.api;
 
 import com.hatcher.bo.AddGroupBo;
+import com.hatcher.bo.UpdateGroupInfoBo;
 import com.hatcher.service.IGroupService;
 import com.hatcher.utils.JsonResult;
 import io.swagger.annotations.Api;
@@ -37,4 +38,15 @@ public class GroupController {
 		}
 		return JsonResult.ok("添加成功");
 	}
+
+	@ApiOperation(value = "修改分组信息")
+	@PostMapping("/updateGroupInfo")
+	public JsonResult updateGroupInfo(
+			@ApiParam(value = "分组对象")
+			@RequestBody
+					UpdateGroupInfoBo updateGroupInfoBo) {
+
+		return JsonResult.ok("修改成功");
+	}
+
 }
