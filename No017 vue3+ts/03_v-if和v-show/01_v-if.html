@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <template id="hello">
+        <input type="text" v-model="score">
+        <div v-if="score >= 80">你很优秀了</div>
+        <div v-else-if="score > 60 && score < 80">不太好</div>
+        <div v-else="score < 60">你挂科了</div>
+    </template>
+    <script src="../vue_js_file/vue.global.js"></script>
+    <script>
+        var app = {
+            template: '#hello',
+            data() {
+                return {
+                    score: 0
+                }
+            }
+        }
+        Vue.createApp(app).mount("#app")
+    </script>
+</body>
+</html>

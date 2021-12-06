@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <template id="hello">
+        <input type="text" v-model="score">
+        <!-- v-if 当条件为false的时候，不会渲染到dom中 -->
+        <div v-if="isShow">你很优秀了</div>
+        <!-- v-show 当条件为false的时候，会渲染到dom中,只改了css -->
+        <div v-show="isShow">你很优秀了</div>
+    </template>
+    <script src="../vue_js_file/vue.global.js"></script>
+    <script>
+        var app = {
+            template: '#hello',
+            data() {
+                return {
+                    isShow: false
+                }
+            }
+        }
+        Vue.createApp(app).mount("#app")
+    </script>
+</body>
+</html>
