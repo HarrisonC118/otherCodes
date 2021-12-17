@@ -1,5 +1,6 @@
 package com.hatcher.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hatcher.dao.ImgMapper;
 import com.hatcher.entity.Img;
@@ -42,5 +43,15 @@ public class ImgServiceImpl extends ServiceImpl<ImgMapper, Img> implements IImgS
 	public List<ImgDisplay> queryImgsByUserId(String userId) {
 		List<ImgDisplay> imgDisplays = imgDao.queryImgsByUserId(userId);
 		return imgDisplays;
+	}
+
+	@Override
+	public Integer deleteImgByImgId(String imgId) {
+		return imgDao.deleteById(imgId);
+	}
+
+	@Override
+	public Integer getGroupImgNum(String groupId) {
+		return Integer.parseInt(imgDao.selectCount(new QueryWrapper<Img>().eq("group_id", groupId)).toString());
 	}
 }

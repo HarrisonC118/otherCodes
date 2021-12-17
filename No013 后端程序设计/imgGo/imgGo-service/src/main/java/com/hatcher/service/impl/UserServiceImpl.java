@@ -53,10 +53,19 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 		return user != null;
 	}
 
-	private boolean isUsernameExist(String username) {
+	@Override
+	public boolean isUsernameExist(String username) {
 		QueryWrapper queryWrapper = new QueryWrapper();
 		queryWrapper.eq("username", username);
 		User user = userDao.selectOne(queryWrapper);
 		return user != null;
+	}
+
+	@Override
+	public String getIdByUsername(String username) {
+		QueryWrapper queryWrapper = new QueryWrapper();
+		queryWrapper.eq("username", username);
+		User user = userDao.selectOne(queryWrapper);
+		return user.getId();
 	}
 }

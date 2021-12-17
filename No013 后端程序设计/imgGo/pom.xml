@@ -36,11 +36,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--  整合spring-data-jdbc  -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jdbc</artifactId>
-        </dependency>
+
         <!--  整合自己的日志框架  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

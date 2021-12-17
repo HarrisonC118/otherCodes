@@ -37,4 +37,20 @@ public interface IUserService extends IService<User> {
 	 * @return true: 存在 false: 不存在
 	 */
 	boolean isIdExist(String userId);
+
+	/**
+	 * 判断用户名是否存在
+	 *
+	 * @param username 用户名
+	 * @return true/false
+	 */
+	boolean isUsernameExist(String username);
+
+	/**
+	 * 根据用户名获取用户Id
+	 *
+	 * @param username 用户名
+	 * @return 用户Id
+	 */
+	String getIdByUsername(String username);
 }

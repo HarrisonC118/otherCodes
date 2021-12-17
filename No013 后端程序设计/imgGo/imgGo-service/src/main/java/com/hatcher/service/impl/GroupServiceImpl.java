@@ -29,7 +29,7 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements
 
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED, rollbackFor = {Exception.class})
-	public int addGroupInfo(AddGroupBo groupBo) {
+	public String addGroupInfo(AddGroupBo groupBo) {
 		Group group = new Group();
 		group.setGroupName(groupBo.getGroupName());
 		group.setGroupContent(groupBo.getGroupContent());
@@ -37,8 +37,11 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements
 		String userId = group.getUserId();
 		User user = userDao.selectById(userId);
 		if (user != null) {
-			return groupDao.insert(group);
+			groupDao.insert(group);
+			return group.getId();
 		}
-		return -1;
+		return "null";
 	}
+
+
 }

@@ -17,7 +17,9 @@ public interface IGroupService extends IService<Group> {
 	 * 添加组别信息
 	 *
 	 * @param groupBo 组
-	 * @return
+	 * @return 插入成功后的id主键
 	 */
-	int addGroupInfo(AddGroupBo groupBo);
+	String addGroupInfo(AddGroupBo groupBo);
+
+
 }

@@ -6,6 +6,7 @@
         <collection property="groupList" ofType="com.hatcher.vo.GroupVo">
             <id column="groupName" property="groupName"/>
             <result column="groupContent" property="groupContent"/>
+            <result column="groupId" property="groupId"/>
             <result column="groupCreateTime" property="groupCreateTime"/>
             <collection property="imgList" ofType="com.hatcher.vo.ImgVo">
                 <id column="imgId" property="imgId"/>
@@ -16,33 +17,31 @@
         </collection>
     </resultMap>
     <select id="queryImgsByUserId" resultMap="imgDisplay" parameterType="String">
-        SELECT
-            u.username userName,
-            n.group_name groupName,
-            n.group_content groupContent,
-            n.gmt_create groupCreateTime,
-            i.imgMasterName,
-            i.imgUrl,
-            i.imgCreateTime,
-            i.imgId
-        FROM
-            user u
-                LEFT JOIN (
-                SELECT
-                    u.id user_id,
-                    u.username imgMasterName,
-                    i.img_url imgUrl,
-                    i.gmt_create imgCreateTime,
-                    i.id imgId,
-                    i.group_id groupId
-                FROM
-                    img i,
-                    user u
-                WHERE
-                    i.user_id = u.id
-            ) i ON u.id = i.user_id
-                LEFT JOIN ne_group n ON i.groupId = n.id
-        WHERE
-            u.id = #{userId}
+        SELECT u.username      userName,
+               n.group_name    groupName,
+               n.group_content groupContent,
+               n.id            groupId,
+               n.gmt_create    groupCreateTime,
+               i.imgMasterName,
+               i.imgUrl,
+               i.imgCreateTime,
+               i.imgId
+        FROM user u
+                 LEFT JOIN (
+            SELECT u.id         user_id,
+                   u.username   imgMasterName,
+                   i.img_url    imgUrl,
+                   i.gmt_create imgCreateTime,
+                   i.id         imgId,
+                   i.group_id   groupId,
+                   i.is_deleted
+            FROM img i,
+                 user u
+            WHERE i.user_id = u.id
+        ) i ON u.id = i.user_id
+                 LEFT JOIN ne_group n ON i.groupId = n.id
+        WHERE u.id = #{userId}
+          and i.is_deleted != 1
+        order by i.imgCreateTime desc
     </select>
 </mapper>

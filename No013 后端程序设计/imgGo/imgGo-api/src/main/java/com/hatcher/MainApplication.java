@@ -2,7 +2,6 @@ package com.hatcher;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 
 /**
  * @author: HatcherCheung
@@ -11,7 +10,6 @@ import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
  */
 
 @SpringBootApplication
-@EnableJdbcRepositories("com.hatcher.dao.") //这里的扫描目录要写好了
 public class MainApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MainApplication.class);

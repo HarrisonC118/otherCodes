@@ -23,6 +23,9 @@ public class AddGroupBo {
 		this.groupContent = groupContent;
 	}
 
+	public AddGroupBo() {
+	}
+
 	public String getUserId() {
 		return userId;
 	}
