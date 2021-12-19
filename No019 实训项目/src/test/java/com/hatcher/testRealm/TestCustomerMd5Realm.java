@@ -22,9 +22,12 @@ public class TestCustomerMd5Realm {
         CustomerMd5Realm customerMd5Realm = new CustomerMd5Realm();
         // 自定义凭证匹配器
         // 默认的凭证匹配器是equals方法，我们可以通过setCredentialsMatcher方法配置自己的凭证匹配器
-        // MD5的凭证匹配器的名字事HashedCredentialsMatcher，还要设置算法的名字是md5
+        // MD5的凭证匹配器的名字是HashedCredentialsMatcher，还要设置算法的名字是md5
         HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
         hashedCredentialsMatcher.setHashAlgorithmName("md5");
+        // 设置散列次数
+        hashedCredentialsMatcher.setHashIterations(1024);
+        // 把自定义的凭证匹配器配置到自定义的realm中
         customerMd5Realm.setCredentialsMatcher(hashedCredentialsMatcher);
         securityManager.setRealm(customerMd5Realm);
         Subject subject = SecurityUtils.getSubject();

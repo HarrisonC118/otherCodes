@@ -26,7 +26,7 @@ public class CustomerMd5Realm extends AuthorizingRealm {
         if ("admin".equals(principal)) {
             // 参数1：用户名 参数2：加密后的密码 参数3：这个密码的salt值 参数4：realm的名字
             return new SimpleAuthenticationInfo("admin",
-                    "5f9dcb70720b6f58a2b219015fad5c30",
+                    "14b9f6ecccb925f15cf92c44ff9326ce",
                     ByteSource.Util.bytes("x0*7ps"),
                     getName());
         }
