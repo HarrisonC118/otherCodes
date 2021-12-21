@@ -5,9 +5,13 @@ import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
+
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * @author: HatcherCheung
@@ -17,7 +21,13 @@ import org.apache.shiro.util.ByteSource;
 public class CustomerMd5Realm extends AuthorizingRealm {
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
-        return null;
+        String primaryPrincipal = (String)principals.getPrimaryPrincipal();
+        SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
+        if ("admin".equals(primaryPrincipal)) {
+            simpleAuthorizationInfo.addRole("admin");
+        }
+        simpleAuthorizationInfo.addStringPermission("user:*:01");
+        return simpleAuthorizationInfo;
     }
 
     @Override

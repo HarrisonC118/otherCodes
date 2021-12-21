@@ -10,6 +10,8 @@ import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.subject.Subject;
 
+import java.util.Arrays;
+
 /**
  * @author: HatcherCheung
  * @Date: 2021/12/17
@@ -17,27 +19,67 @@ import org.apache.shiro.subject.Subject;
  */
 public class TestCustomerMd5Realm {
     public static void main(String[] args) {
-        DefaultSecurityManager securityManager = new DefaultSecurityManager();
-        SecurityUtils.setSecurityManager(securityManager);
-        CustomerMd5Realm customerMd5Realm = new CustomerMd5Realm();
-        // 自定义凭证匹配器
-        // 默认的凭证匹配器是equals方法，我们可以通过setCredentialsMatcher方法配置自己的凭证匹配器
-        // MD5的凭证匹配器的名字是HashedCredentialsMatcher，还要设置算法的名字是md5
+//        DefaultSecurityManager securityManager = new DefaultSecurityManager();
+//        SecurityUtils.setSecurityManager(securityManager);
+//        CustomerMd5Realm customerMd5Realm = new CustomerMd5Realm();
+//        // 自定义凭证匹配器
+//        // 默认的凭证匹配器是equals方法，我们可以通过setCredentialsMatcher方法配置自己的凭证匹配器
+//        // MD5的凭证匹配器的名字是HashedCredentialsMatcher，还要设置算法的名字是md5
+//        HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
+//        hashedCredentialsMatcher.setHashAlgorithmName("md5");
+//        // 设置散列次数
+//        hashedCredentialsMatcher.setHashIterations(1024);
+//        // 把自定义的凭证匹配器配置到自定义的realm中
+//        customerMd5Realm.setCredentialsMatcher(hashedCredentialsMatcher);
+//        securityManager.setRealm(customerMd5Realm);
+//        Subject subject = SecurityUtils.getSubject();
+//        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken("admin","123456");
+//        try {
+//            subject.login(usernamePasswordToken);
+//            System.out.println("登录成功！");
+//        } catch (UnknownAccountException e) {
+//            e.printStackTrace();
+//            System.out.println("用户名不存在！");
+//        } catch (IncorrectCredentialsException e) {
+//            e.printStackTrace();
+//            System.out.println("账号密码错误！");
+//        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        DefaultSecurityManager defaultSecurityManager = new DefaultSecurityManager();
+        SecurityUtils.setSecurityManager(defaultSecurityManager);
         HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
         hashedCredentialsMatcher.setHashAlgorithmName("md5");
-        // 设置散列次数
         hashedCredentialsMatcher.setHashIterations(1024);
-        // 把自定义的凭证匹配器配置到自定义的realm中
+        CustomerMd5Realm customerMd5Realm = new CustomerMd5Realm();
         customerMd5Realm.setCredentialsMatcher(hashedCredentialsMatcher);
-        securityManager.setRealm(customerMd5Realm);
-        Subject subject = SecurityUtils.getSubject();
+        defaultSecurityManager.setRealm(customerMd5Realm);
         UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken("admin","123456");
+        Subject subject = SecurityUtils.getSubject();
         try {
             subject.login(usernamePasswordToken);
             System.out.println("登录成功！");
+
+            System.out.println("subject.hasRole(\"admin\") = " + subject.hasRole("admin"));
+            System.out.println("subject.hasAllRoles(Arrays.asList(\"admin\", \"super\")) = " + subject.hasAllRoles(Arrays.asList("admin", "super")));
+            System.out.println("subject.hasRoles(Arrays.asList(\"admin\",\"super\")) = " + Arrays.toString(subject.hasRoles(Arrays.asList("admin", "super"))));
+
         } catch (UnknownAccountException e) {
             e.printStackTrace();
-            System.out.println("用户名不存在！");
+            System.out.println("用户名未找到！");
         } catch (IncorrectCredentialsException e) {
             e.printStackTrace();
             System.out.println("账号密码错误！");

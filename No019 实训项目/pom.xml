@@ -24,10 +24,17 @@
   </properties>
 
   <dependencies>
-    <!--安装shiro-->
+    <dependency>
+      <!-- jsoup HTML parser library @ https://jsoup.org/ -->
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.14.3</version>
+    </dependency>
+
+    <!--引入shiro与springboot整合的依赖-->
     <dependency>
       <groupId>org.apache.shiro</groupId>
-      <artifactId>shiro-core</artifactId>
+      <artifactId>shiro-spring-boot-starter</artifactId>
       <version>1.8.0</version>
     </dependency>
     <!--  这是Spring Boot的核心启动器，包含了自动配置、日志和YAML  -->
