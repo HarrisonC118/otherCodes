@@ -37,6 +37,18 @@
       <artifactId>shiro-spring-boot-starter</artifactId>
       <version>1.8.0</version>
     </dependency>
+
+    <!--  EhCache  -->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-ehcache</artifactId>
+      <version>1.7.1</version>
+    </dependency>
+    <!--  Redis  -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
     <!--  这是Spring Boot的核心启动器，包含了自动配置、日志和YAML  -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -112,6 +124,21 @@
       <artifactId>junit</artifactId>
       <version>4.13.2</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- hibernate jpa-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <!--简单快速的访问静态资源(图片、html等)-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
   </dependencies>
 
