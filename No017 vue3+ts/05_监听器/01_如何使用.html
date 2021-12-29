@@ -46,6 +46,15 @@
                 changeXiaochenName2() {
                     this.xiaochen.name='yc'
                 }
+            },
+            created () {
+                // 调用unwatch可以暂停这个监听器
+                const unwatch = this.$watch('xiaochen', (newValue,oldValue) => {
+                    console.log(newValue,oldValue);
+                },{
+                    deep: true,
+                    immediate: true
+                })
             }
         }
         const app = Vue.createApp(vueapp);
