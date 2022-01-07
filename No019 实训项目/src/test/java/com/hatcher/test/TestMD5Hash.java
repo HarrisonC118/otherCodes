@@ -20,7 +20,7 @@ public class TestMD5Hash {
         System.out.println(md5Hash1.toHex());
 
         // 使用Md5加salt然后散列1024次的方式加密123456
-        Md5Hash md5Hash2 = new Md5Hash("123456","x0*7ps",1024);
+        Md5Hash md5Hash2 = new Md5Hash("root","x0*7ps%m",1024);
         System.out.println(md5Hash2.toHex());
     }
 }
