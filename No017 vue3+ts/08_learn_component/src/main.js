@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import App from './03_Provide和inject/App.vue';
+import App from './04_slot/App.vue';
 import router from './router';
 import store from './store';
 
