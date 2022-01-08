@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Title from "./Title.vue";
+import Title from './Title.vue';
 export default {
   components: {
     Title,
@@ -13,8 +13,8 @@ export default {
   data() {
     return {
       message: {
-        title: "warning",
-        content: "哇啦啦啦",
+        title: 'warning',
+        content: '哇啦啦啦',
       },
     };
   },

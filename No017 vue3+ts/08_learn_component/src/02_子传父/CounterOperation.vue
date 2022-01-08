@@ -9,21 +9,21 @@
 <script>
 export default {
   // 告诉vue一会儿要触发父组件的什么事件
-  emits: ["add", "sub", "alert"],
+  emits: ['add', 'sub', 'alert'],
   data() {
     return {
-      message: "hello world!",
+      message: 'hello world!',
     };
   },
   methods: {
     increment() {
-      this.$emit("add");
+      this.$emit('add');
     },
     decrement() {
-      this.$emit("sub");
+      this.$emit('sub');
     },
     notice() {
-      this.$emit("alert", this.message);
+      this.$emit('alert', this.message);
     },
   },
 };
