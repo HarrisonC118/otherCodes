@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>App中的内容{{ HomeName }}</h2>
+    <h2>App中的内容{{ HomeName.value }}</h2>
   </div>
 </template>
 
