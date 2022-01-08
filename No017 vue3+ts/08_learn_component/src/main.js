@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import App from './05_具名插槽/App.vue';
+import App from './06_作用域插槽/App.vue';
 import router from './router';
 import store from './store';
 
