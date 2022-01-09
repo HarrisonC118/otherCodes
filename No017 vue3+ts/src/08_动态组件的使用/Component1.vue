@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: 'component1',
   props: {
     name: {
       type: String,

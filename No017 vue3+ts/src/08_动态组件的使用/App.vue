@@ -4,7 +4,9 @@
       display {{ item }}
     </button>
     <!-- is属性可以规定到底使用哪个组件，里面的内容就是下面定义的components中的内容 -->
-    <component :is="currentComponentName" name="hatcher" :age="18"></component>
+    <keep-alive>
+      <component :is="currentComponentName" name="hatcher" :age="18"></component>
+    </keep-alive>
   </div>
 </template>
 

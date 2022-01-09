@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2>name:{{ name }} -- age:{{ age }}</h2>
+    <button @click="counterPlus">{{ counter }}</button>
   </div>
 </template>
 
@@ -14,6 +15,16 @@ export default {
     age: {
       type: Number,
       default: 0,
+    },
+  },
+  data() {
+    return {
+      counter: 0,
+    };
+  },
+  methods: {
+    counterPlus() {
+      this.counter++;
     },
   },
 };
