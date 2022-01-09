@@ -1,7 +1,10 @@
 <template>
   <div>
-    <NewInputVue v-model="message"></NewInputVue>
-    <h2>message的值: {{ message }}</h2>
+    <!-- 绑定一个 -->
+    <!-- <NewInputVue v-model="message"></NewInputVue> -->
+    <!-- 绑定多个 -->
+    <h2>message的值: {{ name }} -- {{ age }}</h2>
+    <NewInputVue v-model:name="name" v-model:age.number="age"></NewInputVue>
   </div>
 </template>
 
@@ -13,7 +16,8 @@ export default {
   },
   data() {
     return {
-      message: '',
+      name: '',
+      age: 0,
     };
   },
 };

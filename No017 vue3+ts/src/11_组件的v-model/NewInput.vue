@@ -1,24 +1,36 @@
 <template>
   <div>
-    <input v-model="value" />
+    <input v-model="inputName" />
+    <input v-model="inputAge" />
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    modelValue: {
+    name: {
       type: String,
     },
+    age: {
+      type: Number,
+    },
   },
-  emits: ['update:modelValue'],
+  emits: ['update:name', 'update:age'],
   computed: {
-    value: {
+    inputName: {
       set(value) {
-        this.$emit('update:modelValue', value);
+        this.$emit('update:name', value);
       },
       get() {
-        return this.modelValue;
+        return this.name;
+      },
+    },
+    inputAge: {
+      set(value) {
+        this.$emit('update:age', value);
+      },
+      get() {
+        return this.age;
       },
     },
   },
