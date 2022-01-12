@@ -1,6 +1,7 @@
 <template>
   <div>
     <slot name="hatcher"></slot>
+    {{ a }}
   </div>
 </template>
 
@@ -13,6 +14,14 @@ export default {
     console.log(attrs.mes2);
     console.log(slots);
     emit("sendMessage", "hello");
+    const a = "hello";
+    const me = () => {
+      console.log("hello");
+    };
+    return {
+      a,
+      me,
+    };
   },
 };
 </script>
