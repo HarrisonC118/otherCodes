@@ -9,10 +9,13 @@ export default {
     const name = ref("hatcher");
     const age = ref(22);
     // 不用指定监听的属性
-    watchEffect(() => {
-      // 用到了name就监听name,没用到的age就不监听
-      console.log("hatcher->", name.value);
+    const stop = watchEffect((onInvalidate) => {
+      onInvalidate(() => {
+        // request.concel...
+      });
     });
+    // 停止监听
+    stop();
     return {
       name,
       age,
