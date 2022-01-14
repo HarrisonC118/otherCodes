@@ -1,5 +1,6 @@
 import { createApp } from "vue";
-import App from "./03_自定义指令/App.vue";
+import App from "./04_定义插件/App.vue";
+import plugins_object from "./04_定义插件/plugins_object";
 
 const app = createApp(App);
 // 自定义全局的指令
@@ -10,4 +11,5 @@ app.directive("focus", {
     console.log(bindings.modifiers.aaa);
   },
 });
+app.use(plugins_object);
 app.mount("#app");
