@@ -5,12 +5,13 @@ const routes = [
   { path: "/", redirect: "/home" },
   {
     path: "/home",
-    name: "Home",
     component: Home,
   },
   {
-    path: "/about",
+    // 动态路由获取url变量
+    path: "/about/user/:username/age/:user_age",
     name: "About",
+    // 打包时会分包，可以用来做懒加载
     component: () => import("../views/About.vue"),
   },
 ];
