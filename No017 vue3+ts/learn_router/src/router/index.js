@@ -37,5 +37,14 @@ router.addRoute("home", {
   component: () => import("../views/Message.vue"),
 });
 
+// 路由守卫
+// to:Route对象，这个路由要跳到哪去
+// from:Route对象，从哪个路由过来的
+router.beforeEach((to, from) => {
+  console.log(to);
+  console.log(from);
+  return undefined;
+});
+
 // 导出router对象，方便使用
 export default router;
