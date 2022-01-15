@@ -6,13 +6,6 @@ const routes = [
   {
     path: "/home",
     component: Home,
-    children: [
-      {
-        //路由地址：/home/hello
-        path: "/hello",
-        component: () => import(""),
-      },
-    ],
   },
   {
     // 动态路由获取url变量

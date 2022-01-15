@@ -3,9 +3,25 @@
     <!-- 当第一个router-link被选中后，会自动增加一个叫hello的class -->
     <router-link to="/" active-class="hello">Home</router-link> |
     <router-link to="/about/user/hatcher/age/23">About</router-link>
+    <button @click="jumpToAbout">jumpToAbout</button>
   </div>
   <router-view />
 </template>
+
+<script>
+import { useRouter } from "vue-router";
+export default {
+  setup() {
+    const router = useRouter();
+
+    const jumpToAbout = () => {
+      // 在setup中控制跳转
+      router.push("/about/user/hatcher/age/23");
+    };
+    return { jumpToAbout };
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
