@@ -24,5 +24,18 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
+// 动态添加路由
+const HomeRoute = {
+  path: "/home",
+  name: "home",
+  component: Home,
+};
+router.addRoute(HomeRoute);
+// 添加二级路由
+router.addRoute("home", {
+  path: "/message",
+  component: () => import("../views/Message.vue"),
+});
+
 // 导出router对象，方便使用
 export default router;
