@@ -9,7 +9,9 @@
     <router-link to="/about/user/hatcher/age/23">About</router-link>
     <button @click="jumpToAbout">jumpToAbout</button>
   </div>
-  <router-view />
+  <router-view #="props">
+    <component :is="props.Component"> </component>
+  </router-view>
 </template>
 
 <script>
