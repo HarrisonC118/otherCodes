@@ -14,6 +14,10 @@ const routes = [
     // 打包时会分包，可以用来做懒加载
     component: () => import("../views/About.vue"),
   },
+  {
+    path: "/:pathMatch(.*)",
+    component: () => import("../views/NotFound.vue"),
+  },
 ];
 // 创建映射对象
 const router = createRouter({
