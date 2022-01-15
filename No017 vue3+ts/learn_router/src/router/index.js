@@ -9,7 +9,7 @@ const routes = [
   },
   {
     // 动态路由获取url变量
-    path: "/about/user/:username/age/:user_age",
+    path: "/about",
     name: "About",
     // 打包时会分包，可以用来做懒加载
     component: () => import("../views/About.vue"),

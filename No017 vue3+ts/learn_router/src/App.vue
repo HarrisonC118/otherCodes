@@ -1,7 +1,11 @@
 <template>
   <div id="nav">
     <!-- 当第一个router-link被选中后，会自动增加一个叫hello的class -->
-    <router-link to="/" active-class="hello">Home</router-link> |
+    <router-link to="/home" v-slot="props" custom>
+      <button @click="props.navigate">jumpToAbout</button>
+      <p>{{ props.href }}</p>
+    </router-link>
+    |
     <router-link to="/about/user/hatcher/age/23">About</router-link>
     <button @click="jumpToAbout">jumpToAbout</button>
   </div>
@@ -16,7 +20,16 @@ export default {
 
     const jumpToAbout = () => {
       // 在setup中控制跳转
-      router.push("/about/user/hatcher/age/23");
+      //   router.push("/about/user/hatcher/age/23");
+
+      //   传递参数
+      router.push({
+        path: "/about",
+        query: {
+          user: "hatcher",
+          age: 23,
+        },
+      });
     };
     return { jumpToAbout };
   },
