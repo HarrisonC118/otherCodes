@@ -1,6 +1,7 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
+    <!-- 当第一个router-link被选中后，会自动增加一个叫hello的class -->
+    <router-link to="/" active-class="hello">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
