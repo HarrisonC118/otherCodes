@@ -10,7 +10,11 @@
     <button @click="jumpToAbout">jumpToAbout</button>
   </div>
   <router-view #="props">
-    <component :is="props.Component"> </component>
+    <transition name="changeComponent">
+      <keep-alive>
+        <component :is="props.Component"> </component>
+      </keep-alive>
+    </transition>
   </router-view>
 </template>
 
@@ -58,5 +62,17 @@ export default {
       color: #42b983;
     }
   }
+}
+.changeComponent-enter-from,
+.changeComponent-leave-to {
+  opacity: 0;
+}
+.changeComponent-enter-to,
+.changeComponent-leave-from {
+  opacity: 1;
+}
+.changeComponent-enter-active,
+.changeComponent-leave-active {
+  transition: opacity 0.5s ease;
 }
 </style>
