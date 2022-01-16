@@ -1,12 +1,13 @@
 <template>
-  <div>{{ name }}</div>
-  <div>{{ age }}</div>
+  <BookPriceVue></BookPriceVue>
 </template>
 
 <script>
+import BookPriceVue from "./components/BookPrice.vue";
 import { useState } from "./hooks/useState";
 
 export default {
+  components: { BookPriceVue },
   setup() {
     const storeState = useState(["name", "age"]);
     return { ...storeState };
