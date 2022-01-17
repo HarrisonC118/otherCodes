@@ -1,13 +1,10 @@
-import { useStore, mapMutations } from "vuex";
-export function useMutation(mapper) {
-  const store = useStore();
-  const mapValue = mapMutations(mapper);
-  const storeValue = {};
-  Object.keys(mapValue).forEach((key) => {
-    const fn = mapValue[key].bind({
-      $store: store,
-    });
-    storeValue[key] = fn;
-  });
+import { mapMutations, createNamespacedHelpers } from "vuex";
+import { useMapper } from "./MutationAndActionMapper";
+export function useMutation(moduleName, mapper) {
+  let mapperFn = mapMutations;
+  if (typeof moduleName === "string" && moduleName.length > 0) {
+    mapperFn = createNamespacedHelpers(moduleName).mapMutations;
+  }
+  const storeValue = useMapper(mapper, mapperFn);
   return storeValue;
 }

@@ -1,9 +1,9 @@
 import { useMapper, createNamespacedHelpers } from "./StateAndGetterMapper";
-import { mapGetters } from "vuex";
-export function useGetter(moduleName, mapper) {
-  let mapperFn = mapGetters;
+import { mapActions } from "vuex";
+export function useAction(moduleName, mapper) {
+  let mapperFn = mapActions;
   if (typeof moduleName === "string" && moduleName.length > 0) {
-    mapperFn = createNamespacedHelpers(moduleName).mapGetters;
+    mapperFn = createNamespacedHelpers(moduleName).mapActions;
   }
   const storeValue = useMapper(mapper, mapperFn);
   return storeValue;
