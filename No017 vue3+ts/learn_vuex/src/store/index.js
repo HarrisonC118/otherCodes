@@ -19,13 +19,20 @@ export default createStore({
       for (const books of state.books) {
         totalPrice += books.price * books.num;
       }
-      return totalPrice * getters.currentDiscount;
+      return (totalPrice * getters.currentDiscount).toFixed(2);
     },
     currentDiscount(state) {
-      return state.discount * 0.9;
+      return (state.discount * 0.9).toFixed(2);
     },
   },
-  mutations: {},
+  mutations: {
+    increment(state, payload) {
+      state.discount = state.discount - payload.offered;
+    },
+    decrement(state, payload) {
+      state.discount = state.discount + payload.offered;
+    },
+  },
   actions: {},
   modules: {},
 });

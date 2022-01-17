@@ -1,6 +1,7 @@
 <template>
-  <div>当前折扣:{{ discount }}</div>
+  <div>当前折扣:{{ curr_discount }}</div>
   <div>总价格:{{ price }}</div>
+  <div>discount:{{ discount }}</div>
   <div>
     <div v-for="item in books" :key="item.id">
       <span>id:{{ item.id }}&nbsp;</span>
@@ -14,10 +15,10 @@
 import { useState, useGetter } from "../hooks";
 export default {
   setup() {
-    const storeState = useState(["books"]);
+    const storeState = useState(["books", "discount"]);
     const storeGetter = useGetter({
       price: "totalPrice",
-      discount: "currentDiscount",
+      curr_discount: "currentDiscount",
     });
     return { ...storeState, ...storeGetter };
   },
