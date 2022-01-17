@@ -5,14 +5,17 @@
 </template>
 
 <script>
-import BookPriceVue from "./components/BookPriceSetupGetters.vue";
-import { mapMutations } from "vuex";
+import BookPriceVue from "../components/BookPriceSetupGetters.vue";
+import { useStore } from "vuex";
 export default {
   components: { BookPriceVue },
   setup() {
-    const mutations = mapMutations(["increment", "decrement"]);
+    const store = useStore();
+    const increment = () => {
+      store.dispatch("increment");
+    };
 
-    return { ...mutations };
+    return { increment };
   },
 };
 </script>

@@ -33,6 +33,12 @@ export default createStore({
       state.discount = state.discount + payload.offered;
     },
   },
-  actions: {},
+  actions: {
+    increment(context) {
+      setTimeout(() => {
+        context.commit("increment", { offered: 0.1 });
+      }, 2000);
+    },
+  },
   modules: {},
 });
