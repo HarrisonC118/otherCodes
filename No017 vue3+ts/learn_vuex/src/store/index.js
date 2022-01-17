@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-
+import axios from "axios";
 export default createStore({
   state: {
     name: "hatcher",
@@ -12,6 +12,7 @@ export default createStore({
       { id: 5, price: 1, num: 5 },
     ],
     discount: 0.7,
+    testInfo: {},
   },
   getters: {
     totalPrice(state, getters) {
@@ -32,12 +33,26 @@ export default createStore({
     decrement(state, payload) {
       state.discount = state.discount + payload.offered;
     },
+    changeTestInfo(state, payload) {
+      state.testInfo = payload;
+    },
   },
   actions: {
     increment(context) {
-      setTimeout(() => {
-        context.commit("increment", { offered: 0.1 });
-      }, 2000);
+      return new Promise((resolve, reject) => {
+        axios
+          .get(
+            "abcdefg"
+            // "https://www.fastmock.site/mock/657e07000910b05b5a3e83bca7d960f4/web/user/userInfo"
+          )
+          .then((res) => {
+            context.commit("changeTestInfo", res);
+            resolve();
+          })
+          .catch((err) => {
+            reject(err);
+          });
+      });
     },
   },
   modules: {},
