@@ -4,7 +4,7 @@
 
 <script>
 import BookPriceVue from "./components/BookPrice.vue";
-import { useState } from "./hooks/useState";
+import { useState } from "./hooks";
 
 export default {
   components: { BookPriceVue },

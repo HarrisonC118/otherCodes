@@ -11,15 +11,15 @@
 </template>
 
 <script>
-import { useStore } from "vuex";
-import { useState } from "../hooks/useState";
+import { useState, useGetter } from "../hooks";
 export default {
   setup() {
-    const store = useStore();
     const storeState = useState(["books"]);
-    const price = store.getters.totalPrice;
-    const discount = store.getters.currentDiscount;
-    return { price, ...storeState, discount };
+    const storeGetter = useGetter({
+      price: "totalPrice",
+      discount: "currentDiscount",
+    });
+    return { ...storeState, ...storeGetter };
   },
 };
 </script>
